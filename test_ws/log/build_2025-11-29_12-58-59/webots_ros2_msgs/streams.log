@@ -1,0 +1,319 @@
+[0.030s] Invoking command in '/home/verity-xie/Unibots 2026/test_ws/build/webots_ros2_msgs': CMAKE_PREFIX_PATH=/home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag:/home/verity-xie/Unibots 2026/test_ws/install/ball_detection:/opt/ros/humble /usr/bin/cmake --build /home/verity-xie/Unibots 2026/test_ws/build/webots_ros2_msgs -- -j32 -l32
+[0.154s] [  0%] Built target webots_ros2_msgs__cpp
+[0.154s] [ 12%] Built target webots_ros2_msgs__rosidl_generator_c
+[0.154s] [ 12%] Built target ament_cmake_python_symlink_webots_ros2_msgs
+[0.154s] [ 24%] Built target webots_ros2_msgs__rosidl_typesupport_cpp
+[0.154s] [ 36%] Built target webots_ros2_msgs__rosidl_typesupport_c
+[0.154s] [ 59%] Built target webots_ros2_msgs__rosidl_typesupport_introspection_cpp
+[0.154s] [ 60%] Built target webots_ros2_msgs__rosidl_typesupport_introspection_c
+[0.154s] [ 71%] Built target webots_ros2_msgs__rosidl_typesupport_fastrtps_cpp
+[0.154s] [ 83%] Built target webots_ros2_msgs__rosidl_typesupport_fastrtps_c
+[0.154s] [ 83%] Built target webots_ros2_msgs
+[0.154s] [ 84%] Built target webots_ros2_msgs__py
+[0.154s] [ 95%] Built target webots_ros2_msgs__rosidl_generator_py
+[0.154s] [ 97%] Built target webots_ros2_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.156s] [100%] Built target webots_ros2_msgs__rosidl_typesupport_c__pyext
+[0.156s] [100%] Built target webots_ros2_msgs__rosidl_typesupport_introspection_c__pyext
+[0.189s] running egg_info
+[0.189s] writing webots_ros2_msgs.egg-info/PKG-INFO
+[0.190s] writing dependency_links to webots_ros2_msgs.egg-info/dependency_links.txt
+[0.190s] writing top-level names to webots_ros2_msgs.egg-info/top_level.txt
+[0.191s] reading manifest file 'webots_ros2_msgs.egg-info/SOURCES.txt'
+[0.191s] writing manifest file 'webots_ros2_msgs.egg-info/SOURCES.txt'
+[0.206s] [100%] Built target ament_cmake_python_build_webots_ros2_msgs_egg
+[0.272s] Invoked command in '/home/verity-xie/Unibots 2026/test_ws/build/webots_ros2_msgs' returned '0': CMAKE_PREFIX_PATH=/home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag:/home/verity-xie/Unibots 2026/test_ws/install/ball_detection:/opt/ros/humble /usr/bin/cmake --build /home/verity-xie/Unibots 2026/test_ws/build/webots_ros2_msgs -- -j32 -l32
+[0.279s] Invoking command in '/home/verity-xie/Unibots 2026/test_ws/build/webots_ros2_msgs': CMAKE_PREFIX_PATH=/home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag:/home/verity-xie/Unibots 2026/test_ws/install/ball_detection:/opt/ros/humble /usr/bin/cmake --install /home/verity-xie/Unibots 2026/test_ws/build/webots_ros2_msgs
+[0.284s] -- Install configuration: ""
+[0.284s] -- Execute custom install script
+[0.284s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/ament_index/resource_index/rosidl_interfaces/webots_ros2_msgs
+[0.285s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/bool_stamped.h
+[0.285s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/camera_recognition_object.h
+[0.285s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/camera_recognition_objects.h
+[0.285s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/bool_stamped__functions.h
+[0.285s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/bool_stamped__struct.h
+[0.285s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/bool_stamped__type_support.h
+[0.285s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/camera_recognition_object__functions.h
+[0.286s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/camera_recognition_object__struct.h
+[0.286s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/camera_recognition_object__type_support.h
+[0.286s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/camera_recognition_objects__functions.h
+[0.286s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/camera_recognition_objects__struct.h
+[0.286s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/camera_recognition_objects__type_support.h
+[0.286s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/float_stamped__functions.h
+[0.286s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/float_stamped__struct.h
+[0.286s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/float_stamped__type_support.h
+[0.286s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/pen_ink_properties__functions.h
+[0.286s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/pen_ink_properties__struct.h
+[0.286s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/pen_ink_properties__type_support.h
+[0.286s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/string_stamped__functions.h
+[0.286s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/string_stamped__struct.h
+[0.286s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/string_stamped__type_support.h
+[0.286s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/urdf_robot__functions.h
+[0.286s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/urdf_robot__struct.h
+[0.286s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/urdf_robot__type_support.h
+[0.287s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/float_stamped.h
+[0.287s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/pen_ink_properties.h
+[0.287s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/rosidl_generator_c__visibility_control.h
+[0.287s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/string_stamped.h
+[0.287s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/urdf_robot.h
+[0.287s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/emitter_send_string__functions.h
+[0.287s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/emitter_send_string__struct.h
+[0.287s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/emitter_send_string__type_support.h
+[0.287s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/get_bool__functions.h
+[0.287s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/get_bool__struct.h
+[0.287s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/get_bool__type_support.h
+[0.287s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/set_string__functions.h
+[0.287s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/set_string__struct.h
+[0.287s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/set_string__type_support.h
+[0.287s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/spawn_node_from_string__functions.h
+[0.287s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/spawn_node_from_string__struct.h
+[0.287s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/spawn_node_from_string__type_support.h
+[0.287s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/spawn_urdf_robot__functions.h
+[0.288s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/spawn_urdf_robot__struct.h
+[0.288s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/spawn_urdf_robot__type_support.h
+[0.288s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/emitter_send_string.h
+[0.288s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/get_bool.h
+[0.288s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/set_string.h
+[0.288s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/spawn_node_from_string.h
+[0.288s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/spawn_urdf_robot.h
+[0.288s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/environment/library_path.sh
+[0.288s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/environment/library_path.dsv
+[0.288s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/bool_stamped__rosidl_typesupport_fastrtps_c.h
+[0.288s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/camera_recognition_object__rosidl_typesupport_fastrtps_c.h
+[0.288s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/camera_recognition_objects__rosidl_typesupport_fastrtps_c.h
+[0.288s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/float_stamped__rosidl_typesupport_fastrtps_c.h
+[0.288s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/pen_ink_properties__rosidl_typesupport_fastrtps_c.h
+[0.288s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/string_stamped__rosidl_typesupport_fastrtps_c.h
+[0.288s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/urdf_robot__rosidl_typesupport_fastrtps_c.h
+[0.288s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.288s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/emitter_send_string__rosidl_typesupport_fastrtps_c.h
+[0.288s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/get_bool__rosidl_typesupport_fastrtps_c.h
+[0.288s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/set_string__rosidl_typesupport_fastrtps_c.h
+[0.289s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/spawn_node_from_string__rosidl_typesupport_fastrtps_c.h
+[0.289s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/spawn_urdf_robot__rosidl_typesupport_fastrtps_c.h
+[0.289s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/bool_stamped.hpp
+[0.289s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/camera_recognition_object.hpp
+[0.289s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/camera_recognition_objects.hpp
+[0.289s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/bool_stamped__builder.hpp
+[0.289s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/bool_stamped__struct.hpp
+[0.289s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/bool_stamped__traits.hpp
+[0.289s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/bool_stamped__type_support.hpp
+[0.289s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/camera_recognition_object__builder.hpp
+[0.289s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/camera_recognition_object__struct.hpp
+[0.289s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/camera_recognition_object__traits.hpp
+[0.289s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/camera_recognition_object__type_support.hpp
+[0.289s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/camera_recognition_objects__builder.hpp
+[0.289s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/camera_recognition_objects__struct.hpp
+[0.289s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/camera_recognition_objects__traits.hpp
+[0.289s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/camera_recognition_objects__type_support.hpp
+[0.289s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/float_stamped__builder.hpp
+[0.289s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/float_stamped__struct.hpp
+[0.289s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/float_stamped__traits.hpp
+[0.289s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/float_stamped__type_support.hpp
+[0.289s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/pen_ink_properties__builder.hpp
+[0.289s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/pen_ink_properties__struct.hpp
+[0.289s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/pen_ink_properties__traits.hpp
+[0.289s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/pen_ink_properties__type_support.hpp
+[0.289s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/string_stamped__builder.hpp
+[0.289s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/string_stamped__struct.hpp
+[0.289s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/string_stamped__traits.hpp
+[0.289s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/string_stamped__type_support.hpp
+[0.289s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/urdf_robot__builder.hpp
+[0.289s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/urdf_robot__struct.hpp
+[0.289s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/urdf_robot__traits.hpp
+[0.289s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/urdf_robot__type_support.hpp
+[0.289s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/float_stamped.hpp
+[0.289s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/pen_ink_properties.hpp
+[0.289s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[0.289s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/string_stamped.hpp
+[0.289s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/urdf_robot.hpp
+[0.289s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/emitter_send_string__builder.hpp
+[0.289s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/emitter_send_string__struct.hpp
+[0.289s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/emitter_send_string__traits.hpp
+[0.289s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/emitter_send_string__type_support.hpp
+[0.289s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/get_bool__builder.hpp
+[0.290s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/get_bool__struct.hpp
+[0.290s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/get_bool__traits.hpp
+[0.290s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/get_bool__type_support.hpp
+[0.290s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/set_string__builder.hpp
+[0.290s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/set_string__struct.hpp
+[0.290s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/set_string__traits.hpp
+[0.290s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/set_string__type_support.hpp
+[0.290s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/spawn_node_from_string__builder.hpp
+[0.290s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/spawn_node_from_string__struct.hpp
+[0.290s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/spawn_node_from_string__traits.hpp
+[0.290s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/spawn_node_from_string__type_support.hpp
+[0.290s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/spawn_urdf_robot__builder.hpp
+[0.290s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/spawn_urdf_robot__struct.hpp
+[0.290s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/spawn_urdf_robot__traits.hpp
+[0.290s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/spawn_urdf_robot__type_support.hpp
+[0.290s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/emitter_send_string.hpp
+[0.290s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/get_bool.hpp
+[0.290s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/set_string.hpp
+[0.290s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/spawn_node_from_string.hpp
+[0.290s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/spawn_urdf_robot.hpp
+[0.290s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/bool_stamped__rosidl_typesupport_fastrtps_cpp.hpp
+[0.290s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/camera_recognition_object__rosidl_typesupport_fastrtps_cpp.hpp
+[0.290s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/camera_recognition_objects__rosidl_typesupport_fastrtps_cpp.hpp
+[0.290s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/float_stamped__rosidl_typesupport_fastrtps_cpp.hpp
+[0.290s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/pen_ink_properties__rosidl_typesupport_fastrtps_cpp.hpp
+[0.290s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/string_stamped__rosidl_typesupport_fastrtps_cpp.hpp
+[0.290s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/urdf_robot__rosidl_typesupport_fastrtps_cpp.hpp
+[0.290s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.291s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/emitter_send_string__rosidl_typesupport_fastrtps_cpp.hpp
+[0.291s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/get_bool__rosidl_typesupport_fastrtps_cpp.hpp
+[0.291s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/set_string__rosidl_typesupport_fastrtps_cpp.hpp
+[0.291s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/spawn_node_from_string__rosidl_typesupport_fastrtps_cpp.hpp
+[0.291s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/spawn_urdf_robot__rosidl_typesupport_fastrtps_cpp.hpp
+[0.291s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/bool_stamped__rosidl_typesupport_introspection_c.h
+[0.291s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/camera_recognition_object__rosidl_typesupport_introspection_c.h
+[0.291s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/camera_recognition_objects__rosidl_typesupport_introspection_c.h
+[0.291s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/float_stamped__rosidl_typesupport_introspection_c.h
+[0.291s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/pen_ink_properties__rosidl_typesupport_introspection_c.h
+[0.291s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/string_stamped__rosidl_typesupport_introspection_c.h
+[0.291s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/urdf_robot__rosidl_typesupport_introspection_c.h
+[0.291s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.291s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/emitter_send_string__rosidl_typesupport_introspection_c.h
+[0.291s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/get_bool__rosidl_typesupport_introspection_c.h
+[0.291s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/set_string__rosidl_typesupport_introspection_c.h
+[0.291s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/spawn_node_from_string__rosidl_typesupport_introspection_c.h
+[0.291s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/spawn_urdf_robot__rosidl_typesupport_introspection_c.h
+[0.292s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/bool_stamped__rosidl_typesupport_introspection_cpp.hpp
+[0.292s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/camera_recognition_object__rosidl_typesupport_introspection_cpp.hpp
+[0.292s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/camera_recognition_objects__rosidl_typesupport_introspection_cpp.hpp
+[0.292s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/float_stamped__rosidl_typesupport_introspection_cpp.hpp
+[0.292s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/pen_ink_properties__rosidl_typesupport_introspection_cpp.hpp
+[0.292s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/string_stamped__rosidl_typesupport_introspection_cpp.hpp
+[0.292s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/msg/detail/urdf_robot__rosidl_typesupport_introspection_cpp.hpp
+[0.292s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/emitter_send_string__rosidl_typesupport_introspection_cpp.hpp
+[0.292s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/get_bool__rosidl_typesupport_introspection_cpp.hpp
+[0.292s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/set_string__rosidl_typesupport_introspection_cpp.hpp
+[0.292s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/spawn_node_from_string__rosidl_typesupport_introspection_cpp.hpp
+[0.292s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/include/webots_ros2_msgs/webots_ros2_msgs/srv/detail/spawn_urdf_robot__rosidl_typesupport_introspection_cpp.hpp
+[0.292s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/environment/pythonpath.sh
+[0.292s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/environment/pythonpath.dsv
+[0.292s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages/webots_ros2_msgs-2025.0.1-py3.10.egg-info/PKG-INFO
+[0.292s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages/webots_ros2_msgs-2025.0.1-py3.10.egg-info/SOURCES.txt
+[0.292s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages/webots_ros2_msgs-2025.0.1-py3.10.egg-info/dependency_links.txt
+[0.292s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages/webots_ros2_msgs-2025.0.1-py3.10.egg-info/top_level.txt
+[0.293s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages/webots_ros2_msgs/__init__.py
+[0.293s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages/webots_ros2_msgs/_webots_ros2_msgs_s.ep.rosidl_typesupport_c.c
+[0.293s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages/webots_ros2_msgs/_webots_ros2_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.293s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages/webots_ros2_msgs/_webots_ros2_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[0.293s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages/webots_ros2_msgs/libwebots_ros2_msgs__rosidl_generator_py.so
+[0.293s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages/webots_ros2_msgs/msg/__init__.py
+[0.293s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages/webots_ros2_msgs/msg/_bool_stamped.py
+[0.293s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages/webots_ros2_msgs/msg/_bool_stamped_s.c
+[0.293s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages/webots_ros2_msgs/msg/_camera_recognition_object.py
+[0.293s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages/webots_ros2_msgs/msg/_camera_recognition_object_s.c
+[0.293s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages/webots_ros2_msgs/msg/_camera_recognition_objects.py
+[0.293s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages/webots_ros2_msgs/msg/_camera_recognition_objects_s.c
+[0.293s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages/webots_ros2_msgs/msg/_float_stamped.py
+[0.293s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages/webots_ros2_msgs/msg/_float_stamped_s.c
+[0.293s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages/webots_ros2_msgs/msg/_pen_ink_properties.py
+[0.293s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages/webots_ros2_msgs/msg/_pen_ink_properties_s.c
+[0.293s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages/webots_ros2_msgs/msg/_string_stamped.py
+[0.293s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages/webots_ros2_msgs/msg/_string_stamped_s.c
+[0.293s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages/webots_ros2_msgs/msg/_urdf_robot.py
+[0.293s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages/webots_ros2_msgs/msg/_urdf_robot_s.c
+[0.293s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages/webots_ros2_msgs/srv/__init__.py
+[0.293s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages/webots_ros2_msgs/srv/_emitter_send_string.py
+[0.293s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages/webots_ros2_msgs/srv/_emitter_send_string_s.c
+[0.293s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages/webots_ros2_msgs/srv/_get_bool.py
+[0.293s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages/webots_ros2_msgs/srv/_get_bool_s.c
+[0.294s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages/webots_ros2_msgs/srv/_set_string.py
+[0.294s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages/webots_ros2_msgs/srv/_set_string_s.c
+[0.294s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages/webots_ros2_msgs/srv/_spawn_node_from_string.py
+[0.294s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages/webots_ros2_msgs/srv/_spawn_node_from_string_s.c
+[0.294s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages/webots_ros2_msgs/srv/_spawn_urdf_robot.py
+[0.294s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages/webots_ros2_msgs/srv/_spawn_urdf_robot_s.c
+[0.294s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages/webots_ros2_msgs/webots_ros2_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.294s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages/webots_ros2_msgs/webots_ros2_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.294s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages/webots_ros2_msgs/webots_ros2_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.294s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages/webots_ros2_msgs/webots_ros2_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.294s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages/webots_ros2_msgs/webots_ros2_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.294s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages/webots_ros2_msgs/webots_ros2_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.294s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/msg/BoolStamped.idl
+[0.294s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/msg/FloatStamped.idl
+[0.294s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/msg/StringStamped.idl
+[0.294s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/msg/CameraRecognitionObject.idl
+[0.294s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/msg/CameraRecognitionObjects.idl
+[0.294s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/msg/UrdfRobot.idl
+[0.295s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/msg/PenInkProperties.idl
+[0.295s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/srv/EmitterSendString.idl
+[0.295s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/srv/GetBool.idl
+[0.295s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/srv/SetString.idl
+[0.295s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/srv/SpawnNodeFromString.idl
+[0.295s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/srv/SpawnUrdfRobot.idl
+[0.295s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/msg/BoolStamped.msg
+[0.295s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/msg/FloatStamped.msg
+[0.295s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/msg/StringStamped.msg
+[0.295s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/msg/CameraRecognitionObject.msg
+[0.295s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/msg/CameraRecognitionObjects.msg
+[0.295s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/msg/UrdfRobot.msg
+[0.295s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/msg/PenInkProperties.msg
+[0.295s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/srv/EmitterSendString.srv
+[0.295s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/srv/EmitterSendString_Request.msg
+[0.295s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/srv/EmitterSendString_Response.msg
+[0.295s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/srv/GetBool.srv
+[0.295s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/srv/GetBool_Request.msg
+[0.295s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/srv/GetBool_Response.msg
+[0.295s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/srv/SetString.srv
+[0.295s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/srv/SetString_Request.msg
+[0.296s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/srv/SetString_Response.msg
+[0.296s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/srv/SpawnNodeFromString.srv
+[0.296s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/srv/SpawnNodeFromString_Request.msg
+[0.296s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/srv/SpawnNodeFromString_Response.msg
+[0.296s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/srv/SpawnUrdfRobot.srv
+[0.296s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/srv/SpawnUrdfRobot_Request.msg
+[0.296s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/srv/SpawnUrdfRobot_Response.msg
+[0.296s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/ament_index/resource_index/package_run_dependencies/webots_ros2_msgs
+[0.296s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/ament_index/resource_index/parent_prefix_path/webots_ros2_msgs
+[0.296s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/environment/ament_prefix_path.sh
+[0.296s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/environment/ament_prefix_path.dsv
+[0.296s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/environment/path.sh
+[0.296s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/environment/path.dsv
+[0.296s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/local_setup.bash
+[0.296s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/local_setup.sh
+[0.296s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/local_setup.zsh
+[0.296s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/local_setup.dsv
+[0.296s] -- Symlinking: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/package.dsv
+[0.301s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/ament_index/resource_index/packages/webots_ros2_msgs
+[0.301s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake/rosidl_cmake-extras.cmake
+[0.301s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.301s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.301s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[0.301s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[0.301s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.301s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.301s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake/webots_ros2_msgsConfig.cmake
+[0.301s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake/webots_ros2_msgsConfig-version.cmake
+[0.301s] -- Up-to-date symlink: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/package.xml
+[0.301s] -- Up-to-date: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/lib/libwebots_ros2_msgs__rosidl_generator_c.so
+[0.301s] -- Up-to-date: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/lib/libwebots_ros2_msgs__rosidl_typesupport_fastrtps_c.so
+[0.301s] -- Up-to-date: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/lib/libwebots_ros2_msgs__rosidl_typesupport_fastrtps_cpp.so
+[0.302s] -- Up-to-date: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/lib/libwebots_ros2_msgs__rosidl_typesupport_introspection_c.so
+[0.302s] -- Up-to-date: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/lib/libwebots_ros2_msgs__rosidl_typesupport_c.so
+[0.302s] -- Up-to-date: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/lib/libwebots_ros2_msgs__rosidl_typesupport_introspection_cpp.so
+[0.302s] -- Up-to-date: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/lib/libwebots_ros2_msgs__rosidl_typesupport_cpp.so
+[0.320s] Listing '/home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages/webots_ros2_msgs'...
+[0.320s] Listing '/home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages/webots_ros2_msgs/msg'...
+[0.320s] Listing '/home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages/webots_ros2_msgs/srv'...
+[0.322s] -- Up-to-date: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/lib/libwebots_ros2_msgs__rosidl_generator_py.so
+[0.322s] -- Up-to-date: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake/export_webots_ros2_msgs__rosidl_generator_cExport.cmake
+[0.322s] -- Up-to-date: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake/export_webots_ros2_msgs__rosidl_generator_cExport-noconfig.cmake
+[0.322s] -- Up-to-date: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake/export_webots_ros2_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[0.322s] -- Up-to-date: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake/export_webots_ros2_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[0.322s] -- Up-to-date: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake/export_webots_ros2_msgs__rosidl_generator_cppExport.cmake
+[0.322s] -- Up-to-date: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake/export_webots_ros2_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[0.322s] -- Up-to-date: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake/export_webots_ros2_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[0.322s] -- Up-to-date: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake/webots_ros2_msgs__rosidl_typesupport_introspection_cExport.cmake
+[0.322s] -- Up-to-date: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake/webots_ros2_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.322s] -- Up-to-date: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake/webots_ros2_msgs__rosidl_typesupport_cExport.cmake
+[0.322s] -- Up-to-date: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake/webots_ros2_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[0.322s] -- Up-to-date: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake/webots_ros2_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[0.322s] -- Up-to-date: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake/webots_ros2_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.322s] -- Up-to-date: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake/webots_ros2_msgs__rosidl_typesupport_cppExport.cmake
+[0.322s] -- Up-to-date: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake/webots_ros2_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[0.322s] -- Up-to-date: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake/export_webots_ros2_msgs__rosidl_generator_pyExport.cmake
+[0.323s] -- Up-to-date: /home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake/export_webots_ros2_msgs__rosidl_generator_pyExport-noconfig.cmake
+[0.324s] Invoked command in '/home/verity-xie/Unibots 2026/test_ws/build/webots_ros2_msgs' returned '0': CMAKE_PREFIX_PATH=/home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag:/home/verity-xie/Unibots 2026/test_ws/install/ball_detection:/opt/ros/humble /usr/bin/cmake --install /home/verity-xie/Unibots 2026/test_ws/build/webots_ros2_msgs

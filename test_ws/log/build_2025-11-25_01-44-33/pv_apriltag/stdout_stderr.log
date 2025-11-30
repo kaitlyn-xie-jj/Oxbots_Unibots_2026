@@ -1,0 +1,23 @@
+running develop
+running egg_info
+creating pv_apriltag.egg-info
+writing pv_apriltag.egg-info/PKG-INFO
+writing dependency_links to pv_apriltag.egg-info/dependency_links.txt
+writing entry points to pv_apriltag.egg-info/entry_points.txt
+writing requirements to pv_apriltag.egg-info/requires.txt
+writing top-level names to pv_apriltag.egg-info/top_level.txt
+writing manifest file 'pv_apriltag.egg-info/SOURCES.txt'
+reading manifest file 'pv_apriltag.egg-info/SOURCES.txt'
+writing manifest file 'pv_apriltag.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag/lib/python3.10/site-packages/pv-apriltag.egg-link (link to .)
+Installing pv_node script to /home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag/lib/pv_apriltag
+Installing pv_sim_bridge script to /home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag/lib/pv_apriltag
+
+Installed /home/verity-xie/Unibots 2026/test_ws/build/pv_apriltag
+running symlink_data
+creating /home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag/share/ament_index
+creating /home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag/share/ament_index/resource_index
+creating /home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag/share/ament_index/resource_index/packages
+symbolically linking /home/verity-xie/Unibots 2026/test_ws/build/pv_apriltag/resource/pv_apriltag -> /home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag/share/ament_index/resource_index/packages
+symbolically linking /home/verity-xie/Unibots 2026/test_ws/build/pv_apriltag/package.xml -> /home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag/share/pv_apriltag

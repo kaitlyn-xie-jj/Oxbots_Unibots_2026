@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "webots_ros2_msgs__py",
+		"source" : "/home/verity-xie/Unibots 2026/test_ws/build/webots_ros2_msgs/webots_ros2_msgs__py"
+	}
+}

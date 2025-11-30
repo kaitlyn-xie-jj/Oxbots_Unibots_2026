@@ -1,0 +1,1 @@
+Invoking command in '/home/verity-xie/Unibots 2026/test_ws/build/webots_ros2_msgs': CMAKE_PREFIX_PATH=/home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag:/home/verity-xie/Unibots 2026/test_ws/install/ball_detection:/opt/ros/humble /usr/bin/cmake --build /home/verity-xie/Unibots 2026/test_ws/build/webots_ros2_msgs -- -j32 -l32

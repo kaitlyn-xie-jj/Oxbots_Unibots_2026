@@ -1,0 +1,50 @@
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rosgraph_msgs: 1.2.2 (/opt/ros/humble/share/rosgraph_msgs/cmake)
+-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found pluginlib: 5.1.2 (/opt/ros/humble/share/pluginlib/cmake)
+-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Found vision_msgs: 4.1.1 (/opt/ros/humble/share/vision_msgs/cmake)
+-- Found webots_ros2_msgs: 2025.0.1 (/home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake)
+-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/verity-xie/Unibots 2026/test_ws/build/webots_ros2_driver
+[  0%] Built target ament_cmake_python_symlink_controller
+[  0%] Built target ament_cmake_python_symlink_vehicle
+[  0%] Built target ament_cmake_python_symlink_webots_ros2_driver
+running egg_info
+running egg_info
+writing vehicle.egg-info/PKG-INFO
+writing controller.egg-info/PKG-INFO
+writing dependency_links to vehicle.egg-info/dependency_links.txt
+writing dependency_links to controller.egg-info/dependency_links.txt
+writing top-level names to vehicle.egg-info/top_level.txt
+writing top-level names to controller.egg-info/top_level.txt
+reading manifest file 'vehicle.egg-info/SOURCES.txt'
+reading manifest file 'controller.egg-info/SOURCES.txt'
+writing manifest file 'vehicle.egg-info/SOURCES.txt'
+writing manifest file 'controller.egg-info/SOURCES.txt'
+running egg_info
+writing webots_ros2_driver.egg-info/PKG-INFO
+writing dependency_links to webots_ros2_driver.egg-info/dependency_links.txt
+writing top-level names to webots_ros2_driver.egg-info/top_level.txt
+reading manifest file 'webots_ros2_driver.egg-info/SOURCES.txt'
+writing manifest file 'webots_ros2_driver.egg-info/SOURCES.txt'
+[  0%] Built target ament_cmake_python_build_vehicle_egg
+[  0%] Built target ament_cmake_python_build_controller_egg
+[  0%] Built target ament_cmake_python_build_webots_ros2_driver_egg
+gmake[2]: *** [CMakeFiles/compile-lib-controller.dir/build.make:70: CMakeFiles/compile-lib-controller] Error 2
+gmake[1]: *** [CMakeFiles/Makefile2:156: CMakeFiles/compile-lib-controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

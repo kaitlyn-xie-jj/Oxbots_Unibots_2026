@@ -1,0 +1,17 @@
+{
+  "package_name": "webots_ros2_msgs",
+  "non_idl_tuples": [
+    "/home/verity-xie/Unibots 2026/test_ws/src/webots_ros2/webots_ros2_msgs:msg/BoolStamped.msg",
+    "/home/verity-xie/Unibots 2026/test_ws/src/webots_ros2/webots_ros2_msgs:msg/FloatStamped.msg",
+    "/home/verity-xie/Unibots 2026/test_ws/src/webots_ros2/webots_ros2_msgs:msg/StringStamped.msg",
+    "/home/verity-xie/Unibots 2026/test_ws/src/webots_ros2/webots_ros2_msgs:msg/CameraRecognitionObject.msg",
+    "/home/verity-xie/Unibots 2026/test_ws/src/webots_ros2/webots_ros2_msgs:msg/CameraRecognitionObjects.msg",
+    "/home/verity-xie/Unibots 2026/test_ws/src/webots_ros2/webots_ros2_msgs:msg/UrdfRobot.msg",
+    "/home/verity-xie/Unibots 2026/test_ws/src/webots_ros2/webots_ros2_msgs:msg/PenInkProperties.msg",
+    "/home/verity-xie/Unibots 2026/test_ws/src/webots_ros2/webots_ros2_msgs:srv/EmitterSendString.srv",
+    "/home/verity-xie/Unibots 2026/test_ws/src/webots_ros2/webots_ros2_msgs:srv/GetBool.srv",
+    "/home/verity-xie/Unibots 2026/test_ws/src/webots_ros2/webots_ros2_msgs:srv/SetString.srv",
+    "/home/verity-xie/Unibots 2026/test_ws/src/webots_ros2/webots_ros2_msgs:srv/SpawnNodeFromString.srv",
+    "/home/verity-xie/Unibots 2026/test_ws/src/webots_ros2/webots_ros2_msgs:srv/SpawnUrdfRobot.srv"
+  ]
+}

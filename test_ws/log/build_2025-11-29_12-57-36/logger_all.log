@@ -1,0 +1,568 @@
+[0.069s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.069s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=32, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fccde941930>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fccdea52ce0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fccdea52ce0>>)
+[0.140s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.140s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.140s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.140s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.140s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.140s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.140s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/verity-xie/Unibots 2026/test_ws'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_detection) by extensions ['ignore', 'ignore_ament_install']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_detection) by extension 'ignore'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_detection) by extension 'ignore_ament_install'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_detection) by extensions ['colcon_pkg']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_detection) by extension 'colcon_pkg'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_detection) by extensions ['colcon_meta']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_detection) by extension 'colcon_meta'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_detection) by extensions ['ros']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_detection) by extension 'ros'
+[0.147s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ball_detection' with type 'ros.ament_python' and name 'ball_detection'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/pv_apriltag) by extensions ['ignore', 'ignore_ament_install']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/pv_apriltag) by extension 'ignore'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/pv_apriltag) by extension 'ignore_ament_install'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/pv_apriltag) by extensions ['colcon_pkg']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/pv_apriltag) by extension 'colcon_pkg'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/pv_apriltag) by extensions ['colcon_meta']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/pv_apriltag) by extension 'colcon_meta'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/pv_apriltag) by extensions ['ros']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/pv_apriltag) by extension 'ros'
+[0.147s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pv_apriltag' with type 'ros.ament_python' and name 'pv_apriltag'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2) by extension 'ignore'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2) by extension 'ignore_ament_install'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2) by extensions ['colcon_pkg']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2) by extension 'colcon_pkg'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2) by extensions ['colcon_meta']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2) by extension 'colcon_meta'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2) by extensions ['ros']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2) by extension 'ros'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2) by extensions ['cmake', 'python']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2) by extension 'cmake'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2) by extension 'python'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2) by extensions ['python_setup_py']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2) by extension 'python_setup_py'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/docker) by extensions ['ignore', 'ignore_ament_install']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/docker) by extension 'ignore'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/docker) by extension 'ignore_ament_install'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/docker) by extensions ['colcon_pkg']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/docker) by extension 'colcon_pkg'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/docker) by extensions ['colcon_meta']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/docker) by extension 'colcon_meta'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/docker) by extensions ['ros']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/docker) by extension 'ros'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/docker) by extensions ['cmake', 'python']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/docker) by extension 'cmake'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/docker) by extension 'python'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/docker) by extensions ['python_setup_py']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/docker) by extension 'python_setup_py'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/images) by extensions ['ignore', 'ignore_ament_install']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/images) by extension 'ignore'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/images) by extension 'ignore_ament_install'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/images) by extensions ['colcon_pkg']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/images) by extension 'colcon_pkg'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/images) by extensions ['colcon_meta']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/images) by extension 'colcon_meta'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/images) by extensions ['ros']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/images) by extension 'ros'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/images) by extensions ['cmake', 'python']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/images) by extension 'cmake'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/images) by extension 'python'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/images) by extensions ['python_setup_py']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/images) by extension 'python_setup_py'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/scripts) by extensions ['ignore', 'ignore_ament_install']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/scripts) by extension 'ignore'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/scripts) by extension 'ignore_ament_install'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/scripts) by extensions ['colcon_pkg']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/scripts) by extension 'colcon_pkg'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/scripts) by extensions ['colcon_meta']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/scripts) by extension 'colcon_meta'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/scripts) by extensions ['ros']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/scripts) by extension 'ros'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/scripts) by extensions ['cmake', 'python']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/scripts) by extension 'cmake'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/scripts) by extension 'python'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/scripts) by extensions ['python_setup_py']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/scripts) by extension 'python_setup_py'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests) by extensions ['ignore', 'ignore_ament_install']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests) by extension 'ignore'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests) by extension 'ignore_ament_install'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests) by extensions ['colcon_pkg']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests) by extension 'colcon_pkg'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests) by extensions ['colcon_meta']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests) by extension 'colcon_meta'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests) by extensions ['ros']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests) by extension 'ros'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests) by extensions ['cmake', 'python']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests) by extension 'cmake'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests) by extension 'python'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests) by extensions ['python_setup_py']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests) by extension 'python_setup_py'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests/sources) by extensions ['ignore', 'ignore_ament_install']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests/sources) by extension 'ignore'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests/sources) by extension 'ignore_ament_install'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests/sources) by extensions ['colcon_pkg']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests/sources) by extension 'colcon_pkg'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests/sources) by extensions ['colcon_meta']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests/sources) by extension 'colcon_meta'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests/sources) by extensions ['ros']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests/sources) by extension 'ros'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests/sources) by extensions ['cmake', 'python']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests/sources) by extension 'cmake'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests/sources) by extension 'python'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests/sources) by extensions ['python_setup_py']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/tests/sources) by extension 'python_setup_py'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2) by extension 'ignore'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2) by extension 'ignore_ament_install'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2) by extensions ['colcon_pkg']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2) by extension 'colcon_pkg'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2) by extensions ['colcon_meta']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2) by extension 'colcon_meta'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2) by extensions ['ros']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2) by extension 'ros'
+[0.149s] DEBUG:colcon.colcon_core.package_identification:Package 'src/webots_ros2/webots_ros2' with type 'ros.ament_python' and name 'webots_ros2'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_control) by extensions ['ignore', 'ignore_ament_install']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_control) by extension 'ignore'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_control) by extension 'ignore_ament_install'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_control) by extensions ['colcon_pkg']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_control) by extension 'colcon_pkg'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_control) by extensions ['colcon_meta']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_control) by extension 'colcon_meta'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_control) by extensions ['ros']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_control) by extension 'ros'
+[0.150s] DEBUG:colcon.colcon_core.package_identification:Package 'src/webots_ros2/webots_ros2_control' with type 'ros.ament_cmake' and name 'webots_ros2_control'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_crazyflie) by extensions ['ignore', 'ignore_ament_install']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_crazyflie) by extension 'ignore'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_crazyflie) by extension 'ignore_ament_install'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_crazyflie) by extensions ['colcon_pkg']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_crazyflie) by extension 'colcon_pkg'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_crazyflie) by extensions ['colcon_meta']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_crazyflie) by extension 'colcon_meta'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_crazyflie) by extensions ['ros']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_crazyflie) by extension 'ros'
+[0.150s] DEBUG:colcon.colcon_core.package_identification:Package 'src/webots_ros2/webots_ros2_crazyflie' with type 'ros.ament_python' and name 'webots_ros2_crazyflie'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_driver) by extension 'ignore'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_driver) by extension 'ignore_ament_install'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_driver) by extensions ['colcon_pkg']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_driver) by extension 'colcon_pkg'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_driver) by extensions ['colcon_meta']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_driver) by extension 'colcon_meta'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_driver) by extensions ['ros']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_driver) by extension 'ros'
+[0.151s] DEBUG:colcon.colcon_core.package_identification:Package 'src/webots_ros2/webots_ros2_driver' with type 'ros.ament_cmake' and name 'webots_ros2_driver'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_epuck) by extensions ['ignore', 'ignore_ament_install']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_epuck) by extension 'ignore'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_epuck) by extension 'ignore_ament_install'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_epuck) by extensions ['colcon_pkg']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_epuck) by extension 'colcon_pkg'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_epuck) by extensions ['colcon_meta']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_epuck) by extension 'colcon_meta'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_epuck) by extensions ['ros']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_epuck) by extension 'ros'
+[0.152s] DEBUG:colcon.colcon_core.package_identification:Package 'src/webots_ros2/webots_ros2_epuck' with type 'ros.ament_python' and name 'webots_ros2_epuck'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_husarion) by extensions ['ignore', 'ignore_ament_install']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_husarion) by extension 'ignore'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_husarion) by extension 'ignore_ament_install'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_husarion) by extensions ['colcon_pkg']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_husarion) by extension 'colcon_pkg'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_husarion) by extensions ['colcon_meta']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_husarion) by extension 'colcon_meta'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_husarion) by extensions ['ros']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_husarion) by extension 'ros'
+[0.152s] DEBUG:colcon.colcon_core.package_identification:Package 'src/webots_ros2/webots_ros2_husarion' with type 'ros.ament_python' and name 'webots_ros2_husarion'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_importer) by extensions ['ignore', 'ignore_ament_install']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_importer) by extension 'ignore'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_importer) by extension 'ignore_ament_install'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_importer) by extensions ['colcon_pkg']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_importer) by extension 'colcon_pkg'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_importer) by extensions ['colcon_meta']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_importer) by extension 'colcon_meta'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_importer) by extensions ['ros']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_importer) by extension 'ros'
+[0.153s] DEBUG:colcon.colcon_core.package_identification:Package 'src/webots_ros2/webots_ros2_importer' with type 'ros.ament_python' and name 'webots_ros2_importer'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_mavic) by extensions ['ignore', 'ignore_ament_install']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_mavic) by extension 'ignore'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_mavic) by extension 'ignore_ament_install'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_mavic) by extensions ['colcon_pkg']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_mavic) by extension 'colcon_pkg'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_mavic) by extensions ['colcon_meta']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_mavic) by extension 'colcon_meta'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_mavic) by extensions ['ros']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_mavic) by extension 'ros'
+[0.153s] DEBUG:colcon.colcon_core.package_identification:Package 'src/webots_ros2/webots_ros2_mavic' with type 'ros.ament_python' and name 'webots_ros2_mavic'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_msgs) by extension 'ignore'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_msgs) by extension 'ignore_ament_install'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_msgs) by extensions ['colcon_pkg']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_msgs) by extension 'colcon_pkg'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_msgs) by extensions ['colcon_meta']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_msgs) by extension 'colcon_meta'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_msgs) by extensions ['ros']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_msgs) by extension 'ros'
+[0.154s] DEBUG:colcon.colcon_core.package_identification:Package 'src/webots_ros2/webots_ros2_msgs' with type 'ros.ament_cmake' and name 'webots_ros2_msgs'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tesla) by extensions ['ignore', 'ignore_ament_install']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tesla) by extension 'ignore'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tesla) by extension 'ignore_ament_install'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tesla) by extensions ['colcon_pkg']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tesla) by extension 'colcon_pkg'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tesla) by extensions ['colcon_meta']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tesla) by extension 'colcon_meta'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tesla) by extensions ['ros']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tesla) by extension 'ros'
+[0.154s] DEBUG:colcon.colcon_core.package_identification:Package 'src/webots_ros2/webots_ros2_tesla' with type 'ros.ament_python' and name 'webots_ros2_tesla'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tests) by extensions ['ignore', 'ignore_ament_install']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tests) by extension 'ignore'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tests) by extension 'ignore_ament_install'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tests) by extensions ['colcon_pkg']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tests) by extension 'colcon_pkg'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tests) by extensions ['colcon_meta']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tests) by extension 'colcon_meta'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tests) by extensions ['ros']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tests) by extension 'ros'
+[0.155s] DEBUG:colcon.colcon_core.package_identification:Package 'src/webots_ros2/webots_ros2_tests' with type 'ros.ament_python' and name 'webots_ros2_tests'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tiago) by extensions ['ignore', 'ignore_ament_install']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tiago) by extension 'ignore'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tiago) by extension 'ignore_ament_install'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tiago) by extensions ['colcon_pkg']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tiago) by extension 'colcon_pkg'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tiago) by extensions ['colcon_meta']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tiago) by extension 'colcon_meta'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tiago) by extensions ['ros']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_tiago) by extension 'ros'
+[0.155s] DEBUG:colcon.colcon_core.package_identification:Package 'src/webots_ros2/webots_ros2_tiago' with type 'ros.ament_python' and name 'webots_ros2_tiago'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_turtlebot) by extensions ['ignore', 'ignore_ament_install']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_turtlebot) by extension 'ignore'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_turtlebot) by extension 'ignore_ament_install'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_turtlebot) by extensions ['colcon_pkg']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_turtlebot) by extension 'colcon_pkg'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_turtlebot) by extensions ['colcon_meta']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_turtlebot) by extension 'colcon_meta'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_turtlebot) by extensions ['ros']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_turtlebot) by extension 'ros'
+[0.155s] DEBUG:colcon.colcon_core.package_identification:Package 'src/webots_ros2/webots_ros2_turtlebot' with type 'ros.ament_python' and name 'webots_ros2_turtlebot'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_universal_robot) by extensions ['ignore', 'ignore_ament_install']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_universal_robot) by extension 'ignore'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_universal_robot) by extension 'ignore_ament_install'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_universal_robot) by extensions ['colcon_pkg']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_universal_robot) by extension 'colcon_pkg'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_universal_robot) by extensions ['colcon_meta']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_universal_robot) by extension 'colcon_meta'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_universal_robot) by extensions ['ros']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/webots_ros2/webots_ros2_universal_robot) by extension 'ros'
+[0.156s] DEBUG:colcon.colcon_core.package_identification:Package 'src/webots_ros2/webots_ros2_universal_robot' with type 'ros.ament_python' and name 'webots_ros2_universal_robot'
+[0.156s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.156s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.156s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.156s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.156s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.173s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.173s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.174s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/verity-xie/Unibots 2026/test_ws/install
+[0.174s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 327 installed packages in /opt/ros/humble
+[0.175s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'ball_detection' build argument 'cmake_args' from command line to 'None'
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'ball_detection' build argument 'cmake_target' from command line to 'None'
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'ball_detection' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'ball_detection' build argument 'cmake_clean_cache' from command line to 'False'
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'ball_detection' build argument 'cmake_clean_first' from command line to 'False'
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'ball_detection' build argument 'cmake_force_configure' from command line to 'False'
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'ball_detection' build argument 'ament_cmake_args' from command line to 'None'
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'ball_detection' build argument 'catkin_cmake_args' from command line to 'None'
+[0.192s] Level 5:colcon.colcon_core.verb:set package 'ball_detection' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.192s] DEBUG:colcon.colcon_core.verb:Building package 'ball_detection' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/verity-xie/Unibots 2026/test_ws/build/ball_detection', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/verity-xie/Unibots 2026/test_ws/install/ball_detection', 'merge_install': False, 'path': '/home/verity-xie/Unibots 2026/test_ws/src/ball_detection', 'symlink_install': True, 'test_result_base': None}
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'pv_apriltag' build argument 'cmake_args' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'pv_apriltag' build argument 'cmake_target' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'pv_apriltag' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'pv_apriltag' build argument 'cmake_clean_cache' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'pv_apriltag' build argument 'cmake_clean_first' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'pv_apriltag' build argument 'cmake_force_configure' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'pv_apriltag' build argument 'ament_cmake_args' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'pv_apriltag' build argument 'catkin_cmake_args' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'pv_apriltag' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.193s] DEBUG:colcon.colcon_core.verb:Building package 'pv_apriltag' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/verity-xie/Unibots 2026/test_ws/build/pv_apriltag', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag', 'merge_install': False, 'path': '/home/verity-xie/Unibots 2026/test_ws/src/pv_apriltag', 'symlink_install': True, 'test_result_base': None}
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_importer' build argument 'cmake_args' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_importer' build argument 'cmake_target' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_importer' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_importer' build argument 'cmake_clean_cache' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_importer' build argument 'cmake_clean_first' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_importer' build argument 'cmake_force_configure' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_importer' build argument 'ament_cmake_args' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_importer' build argument 'catkin_cmake_args' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_importer' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.193s] DEBUG:colcon.colcon_core.verb:Building package 'webots_ros2_importer' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/verity-xie/Unibots 2026/test_ws/build/webots_ros2_importer', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_importer', 'merge_install': False, 'path': '/home/verity-xie/Unibots 2026/test_ws/src/webots_ros2/webots_ros2_importer', 'symlink_install': True, 'test_result_base': None}
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_msgs' build argument 'cmake_args' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_msgs' build argument 'cmake_target' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.193s] DEBUG:colcon.colcon_core.verb:Building package 'webots_ros2_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/verity-xie/Unibots 2026/test_ws/build/webots_ros2_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs', 'merge_install': False, 'path': '/home/verity-xie/Unibots 2026/test_ws/src/webots_ros2/webots_ros2_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_driver' build argument 'cmake_args' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_driver' build argument 'cmake_target' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_driver' build argument 'cmake_clean_first' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_driver' build argument 'cmake_force_configure' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_driver' build argument 'ament_cmake_args' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.193s] DEBUG:colcon.colcon_core.verb:Building package 'webots_ros2_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/verity-xie/Unibots 2026/test_ws/build/webots_ros2_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_driver', 'merge_install': False, 'path': '/home/verity-xie/Unibots 2026/test_ws/src/webots_ros2/webots_ros2_driver', 'symlink_install': True, 'test_result_base': None}
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_control' build argument 'cmake_args' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_control' build argument 'cmake_target' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.194s] DEBUG:colcon.colcon_core.verb:Building package 'webots_ros2_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/verity-xie/Unibots 2026/test_ws/build/webots_ros2_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_control', 'merge_install': False, 'path': '/home/verity-xie/Unibots 2026/test_ws/src/webots_ros2/webots_ros2_control', 'symlink_install': True, 'test_result_base': None}
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_crazyflie' build argument 'cmake_args' from command line to 'None'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_crazyflie' build argument 'cmake_target' from command line to 'None'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_crazyflie' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_crazyflie' build argument 'cmake_clean_cache' from command line to 'False'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_crazyflie' build argument 'cmake_clean_first' from command line to 'False'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_crazyflie' build argument 'cmake_force_configure' from command line to 'False'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_crazyflie' build argument 'ament_cmake_args' from command line to 'None'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_crazyflie' build argument 'catkin_cmake_args' from command line to 'None'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_crazyflie' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.194s] DEBUG:colcon.colcon_core.verb:Building package 'webots_ros2_crazyflie' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/verity-xie/Unibots 2026/test_ws/build/webots_ros2_crazyflie', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_crazyflie', 'merge_install': False, 'path': '/home/verity-xie/Unibots 2026/test_ws/src/webots_ros2/webots_ros2_crazyflie', 'symlink_install': True, 'test_result_base': None}
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_mavic' build argument 'cmake_args' from command line to 'None'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_mavic' build argument 'cmake_target' from command line to 'None'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_mavic' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_mavic' build argument 'cmake_clean_cache' from command line to 'False'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_mavic' build argument 'cmake_clean_first' from command line to 'False'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_mavic' build argument 'cmake_force_configure' from command line to 'False'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_mavic' build argument 'ament_cmake_args' from command line to 'None'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_mavic' build argument 'catkin_cmake_args' from command line to 'None'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_mavic' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.194s] DEBUG:colcon.colcon_core.verb:Building package 'webots_ros2_mavic' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/verity-xie/Unibots 2026/test_ws/build/webots_ros2_mavic', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_mavic', 'merge_install': False, 'path': '/home/verity-xie/Unibots 2026/test_ws/src/webots_ros2/webots_ros2_mavic', 'symlink_install': True, 'test_result_base': None}
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tesla' build argument 'cmake_args' from command line to 'None'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tesla' build argument 'cmake_target' from command line to 'None'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tesla' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tesla' build argument 'cmake_clean_cache' from command line to 'False'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tesla' build argument 'cmake_clean_first' from command line to 'False'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tesla' build argument 'cmake_force_configure' from command line to 'False'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tesla' build argument 'ament_cmake_args' from command line to 'None'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tesla' build argument 'catkin_cmake_args' from command line to 'None'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tesla' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.194s] DEBUG:colcon.colcon_core.verb:Building package 'webots_ros2_tesla' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/verity-xie/Unibots 2026/test_ws/build/webots_ros2_tesla', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_tesla', 'merge_install': False, 'path': '/home/verity-xie/Unibots 2026/test_ws/src/webots_ros2/webots_ros2_tesla', 'symlink_install': True, 'test_result_base': None}
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_epuck' build argument 'cmake_args' from command line to 'None'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_epuck' build argument 'cmake_target' from command line to 'None'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_epuck' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_epuck' build argument 'cmake_clean_cache' from command line to 'False'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_epuck' build argument 'cmake_clean_first' from command line to 'False'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_epuck' build argument 'cmake_force_configure' from command line to 'False'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_epuck' build argument 'ament_cmake_args' from command line to 'None'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_epuck' build argument 'catkin_cmake_args' from command line to 'None'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_epuck' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.194s] DEBUG:colcon.colcon_core.verb:Building package 'webots_ros2_epuck' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/verity-xie/Unibots 2026/test_ws/build/webots_ros2_epuck', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_epuck', 'merge_install': False, 'path': '/home/verity-xie/Unibots 2026/test_ws/src/webots_ros2/webots_ros2_epuck', 'symlink_install': True, 'test_result_base': None}
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_husarion' build argument 'cmake_args' from command line to 'None'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_husarion' build argument 'cmake_target' from command line to 'None'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_husarion' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_husarion' build argument 'cmake_clean_cache' from command line to 'False'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_husarion' build argument 'cmake_clean_first' from command line to 'False'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_husarion' build argument 'cmake_force_configure' from command line to 'False'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_husarion' build argument 'ament_cmake_args' from command line to 'None'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_husarion' build argument 'catkin_cmake_args' from command line to 'None'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_husarion' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.195s] DEBUG:colcon.colcon_core.verb:Building package 'webots_ros2_husarion' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/verity-xie/Unibots 2026/test_ws/build/webots_ros2_husarion', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_husarion', 'merge_install': False, 'path': '/home/verity-xie/Unibots 2026/test_ws/src/webots_ros2/webots_ros2_husarion', 'symlink_install': True, 'test_result_base': None}
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tiago' build argument 'cmake_args' from command line to 'None'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tiago' build argument 'cmake_target' from command line to 'None'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tiago' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tiago' build argument 'cmake_clean_cache' from command line to 'False'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tiago' build argument 'cmake_clean_first' from command line to 'False'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tiago' build argument 'cmake_force_configure' from command line to 'False'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tiago' build argument 'ament_cmake_args' from command line to 'None'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tiago' build argument 'catkin_cmake_args' from command line to 'None'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tiago' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.195s] DEBUG:colcon.colcon_core.verb:Building package 'webots_ros2_tiago' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/verity-xie/Unibots 2026/test_ws/build/webots_ros2_tiago', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_tiago', 'merge_install': False, 'path': '/home/verity-xie/Unibots 2026/test_ws/src/webots_ros2/webots_ros2_tiago', 'symlink_install': True, 'test_result_base': None}
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_turtlebot' build argument 'cmake_args' from command line to 'None'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_turtlebot' build argument 'cmake_target' from command line to 'None'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_turtlebot' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_turtlebot' build argument 'cmake_clean_cache' from command line to 'False'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_turtlebot' build argument 'cmake_clean_first' from command line to 'False'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_turtlebot' build argument 'cmake_force_configure' from command line to 'False'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_turtlebot' build argument 'ament_cmake_args' from command line to 'None'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_turtlebot' build argument 'catkin_cmake_args' from command line to 'None'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_turtlebot' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.195s] DEBUG:colcon.colcon_core.verb:Building package 'webots_ros2_turtlebot' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/verity-xie/Unibots 2026/test_ws/build/webots_ros2_turtlebot', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_turtlebot', 'merge_install': False, 'path': '/home/verity-xie/Unibots 2026/test_ws/src/webots_ros2/webots_ros2_turtlebot', 'symlink_install': True, 'test_result_base': None}
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_universal_robot' build argument 'cmake_args' from command line to 'None'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_universal_robot' build argument 'cmake_target' from command line to 'None'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_universal_robot' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_universal_robot' build argument 'cmake_clean_cache' from command line to 'False'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_universal_robot' build argument 'cmake_clean_first' from command line to 'False'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_universal_robot' build argument 'cmake_force_configure' from command line to 'False'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_universal_robot' build argument 'ament_cmake_args' from command line to 'None'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_universal_robot' build argument 'catkin_cmake_args' from command line to 'None'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_universal_robot' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.195s] DEBUG:colcon.colcon_core.verb:Building package 'webots_ros2_universal_robot' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/verity-xie/Unibots 2026/test_ws/build/webots_ros2_universal_robot', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_universal_robot', 'merge_install': False, 'path': '/home/verity-xie/Unibots 2026/test_ws/src/webots_ros2/webots_ros2_universal_robot', 'symlink_install': True, 'test_result_base': None}
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tests' build argument 'cmake_args' from command line to 'None'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tests' build argument 'cmake_target' from command line to 'None'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tests' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tests' build argument 'cmake_clean_cache' from command line to 'False'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tests' build argument 'cmake_clean_first' from command line to 'False'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tests' build argument 'cmake_force_configure' from command line to 'False'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tests' build argument 'ament_cmake_args' from command line to 'None'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tests' build argument 'catkin_cmake_args' from command line to 'None'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_tests' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.195s] DEBUG:colcon.colcon_core.verb:Building package 'webots_ros2_tests' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/verity-xie/Unibots 2026/test_ws/build/webots_ros2_tests', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_tests', 'merge_install': False, 'path': '/home/verity-xie/Unibots 2026/test_ws/src/webots_ros2/webots_ros2_tests', 'symlink_install': True, 'test_result_base': None}
+[0.196s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2' build argument 'cmake_args' from command line to 'None'
+[0.196s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2' build argument 'cmake_target' from command line to 'None'
+[0.196s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.196s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.196s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2' build argument 'cmake_clean_first' from command line to 'False'
+[0.196s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2' build argument 'cmake_force_configure' from command line to 'False'
+[0.196s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2' build argument 'ament_cmake_args' from command line to 'None'
+[0.196s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.196s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.196s] DEBUG:colcon.colcon_core.verb:Building package 'webots_ros2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/verity-xie/Unibots 2026/test_ws/build/webots_ros2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/verity-xie/Unibots 2026/test_ws/install/webots_ros2', 'merge_install': False, 'path': '/home/verity-xie/Unibots 2026/test_ws/src/webots_ros2/webots_ros2', 'symlink_install': True, 'test_result_base': None}
+[0.196s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.196s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.196s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/verity-xie/Unibots 2026/test_ws/src/webots_ros2/webots_ros2_importer' with build type 'ament_python'
+[0.197s] Level 1:colcon.colcon_core.shell:create_environment_hook('webots_ros2_importer', 'ament_prefix_path')
+[0.198s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.198s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_importer/share/webots_ros2_importer/hook/ament_prefix_path.ps1'
+[0.198s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_importer/share/webots_ros2_importer/hook/ament_prefix_path.dsv'
+[0.198s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_importer/share/webots_ros2_importer/hook/ament_prefix_path.sh'
+[0.199s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.199s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.200s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/verity-xie/Unibots 2026/test_ws/src/webots_ros2/webots_ros2_msgs' with build type 'ament_cmake'
+[0.200s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/verity-xie/Unibots 2026/test_ws/src/webots_ros2/webots_ros2_msgs'
+[0.200s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.200s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.202s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/verity-xie/Unibots 2026/test_ws/src/ball_detection' with build type 'ament_python'
+[0.202s] Level 1:colcon.colcon_core.shell:create_environment_hook('ball_detection', 'ament_prefix_path')
+[0.202s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/verity-xie/Unibots 2026/test_ws/install/ball_detection/share/ball_detection/hook/ament_prefix_path.ps1'
+[0.202s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/verity-xie/Unibots 2026/test_ws/install/ball_detection/share/ball_detection/hook/ament_prefix_path.dsv'
+[0.202s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/verity-xie/Unibots 2026/test_ws/install/ball_detection/share/ball_detection/hook/ament_prefix_path.sh'
+[0.203s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.203s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.204s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/verity-xie/Unibots 2026/test_ws/src/pv_apriltag' with build type 'ament_python'
+[0.204s] Level 1:colcon.colcon_core.shell:create_environment_hook('pv_apriltag', 'ament_prefix_path')
+[0.204s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag/share/pv_apriltag/hook/ament_prefix_path.ps1'
+[0.205s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag/share/pv_apriltag/hook/ament_prefix_path.dsv'
+[0.205s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag/share/pv_apriltag/hook/ament_prefix_path.sh'
+[0.205s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.205s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.321s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/verity-xie/Unibots 2026/test_ws/src/webots_ros2/webots_ros2_importer'
+[0.322s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.322s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.327s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/verity-xie/Unibots 2026/test_ws/build/webots_ros2_msgs': CMAKE_PREFIX_PATH=/home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag:/home/verity-xie/Unibots 2026/test_ws/install/ball_detection:/opt/ros/humble /usr/bin/cmake --build /home/verity-xie/Unibots 2026/test_ws/build/webots_ros2_msgs -- -j32 -l32
+[0.481s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/verity-xie/Unibots 2026/test_ws/src/ball_detection'
+[0.481s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.481s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.595s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/verity-xie/Unibots 2026/test_ws/src/pv_apriltag'
+[0.596s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.596s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.602s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/verity-xie/Unibots 2026/test_ws/build/webots_ros2_msgs' returned '0': CMAKE_PREFIX_PATH=/home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag:/home/verity-xie/Unibots 2026/test_ws/install/ball_detection:/opt/ros/humble /usr/bin/cmake --build /home/verity-xie/Unibots 2026/test_ws/build/webots_ros2_msgs -- -j32 -l32
+[0.607s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/verity-xie/Unibots 2026/test_ws/build/webots_ros2_msgs': CMAKE_PREFIX_PATH=/home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag:/home/verity-xie/Unibots 2026/test_ws/install/ball_detection:/opt/ros/humble /usr/bin/cmake --install /home/verity-xie/Unibots 2026/test_ws/build/webots_ros2_msgs
+[0.765s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/verity-xie/Unibots 2026/test_ws/build/ball_detection': PYTHONPATH=/home/verity-xie/Unibots 2026/test_ws/build/ball_detection/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/verity-xie/Unibots 2026/test_ws/install/ball_detection/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/verity-xie/Unibots 2026/test_ws/build/ball_detection/build --no-deps symlink_data
+[0.766s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/verity-xie/Unibots 2026/test_ws/build/pv_apriltag': PYTHONPATH=/home/verity-xie/Unibots 2026/test_ws/build/pv_apriltag/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/verity-xie/Unibots 2026/test_ws/build/pv_apriltag/build --no-deps symlink_data
+[0.783s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/verity-xie/Unibots 2026/test_ws/build/webots_ros2_importer': PYTHONPATH=/home/verity-xie/Unibots 2026/test_ws/build/webots_ros2_importer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_importer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/verity-xie/Unibots 2026/test_ws/build/webots_ros2_importer/build --no-deps symlink_data
+[0.962s] Level 1:colcon.colcon_core.shell:create_environment_hook('ball_detection', 'pythonpath_develop')
+[0.962s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/verity-xie/Unibots 2026/test_ws/build/ball_detection' returned '0': PYTHONPATH=/home/verity-xie/Unibots 2026/test_ws/build/ball_detection/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/verity-xie/Unibots 2026/test_ws/install/ball_detection/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/verity-xie/Unibots 2026/test_ws/build/ball_detection/build --no-deps symlink_data
+[0.963s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/verity-xie/Unibots 2026/test_ws/build/ball_detection/share/ball_detection/hook/pythonpath_develop.ps1'
+[0.964s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/verity-xie/Unibots 2026/test_ws/build/ball_detection/share/ball_detection/hook/pythonpath_develop.dsv'
+[0.964s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/verity-xie/Unibots 2026/test_ws/build/ball_detection/share/ball_detection/hook/pythonpath_develop.sh'
+[0.966s] Level 1:colcon.colcon_core.environment:checking '/home/verity-xie/Unibots 2026/test_ws/install/ball_detection' for CMake module files
+[0.966s] Level 1:colcon.colcon_core.environment:checking '/home/verity-xie/Unibots 2026/test_ws/install/ball_detection' for CMake config files
+[0.967s] Level 1:colcon.colcon_core.environment:checking '/home/verity-xie/Unibots 2026/test_ws/install/ball_detection/lib'
+[0.967s] Level 1:colcon.colcon_core.environment:checking '/home/verity-xie/Unibots 2026/test_ws/install/ball_detection/bin'
+[0.967s] Level 1:colcon.colcon_core.environment:checking '/home/verity-xie/Unibots 2026/test_ws/install/ball_detection/lib/pkgconfig/ball_detection.pc'
+[0.967s] Level 1:colcon.colcon_core.environment:checking '/home/verity-xie/Unibots 2026/test_ws/install/ball_detection/lib/python3.10/site-packages'
+[0.967s] Level 1:colcon.colcon_core.shell:create_environment_hook('ball_detection', 'pythonpath')
+[0.967s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/verity-xie/Unibots 2026/test_ws/install/ball_detection/share/ball_detection/hook/pythonpath.ps1'
+[0.968s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/verity-xie/Unibots 2026/test_ws/install/ball_detection/share/ball_detection/hook/pythonpath.dsv'
+[0.968s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/verity-xie/Unibots 2026/test_ws/install/ball_detection/share/ball_detection/hook/pythonpath.sh'
+[0.969s] Level 1:colcon.colcon_core.environment:checking '/home/verity-xie/Unibots 2026/test_ws/install/ball_detection/bin'
+[0.969s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ball_detection)
+[0.969s] INFO:colcon.colcon_core.shell:Creating package script '/home/verity-xie/Unibots 2026/test_ws/install/ball_detection/share/ball_detection/package.ps1'
+[0.970s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/verity-xie/Unibots 2026/test_ws/install/ball_detection/share/ball_detection/package.dsv'
+[0.970s] INFO:colcon.colcon_core.shell:Creating package script '/home/verity-xie/Unibots 2026/test_ws/install/ball_detection/share/ball_detection/package.sh'
+[0.971s] INFO:colcon.colcon_core.shell:Creating package script '/home/verity-xie/Unibots 2026/test_ws/install/ball_detection/share/ball_detection/package.bash'
+[0.971s] INFO:colcon.colcon_core.shell:Creating package script '/home/verity-xie/Unibots 2026/test_ws/install/ball_detection/share/ball_detection/package.zsh'
+[0.972s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/verity-xie/Unibots 2026/test_ws/install/ball_detection/share/colcon-core/packages/ball_detection)
+[0.976s] Level 1:colcon.colcon_core.shell:create_environment_hook('pv_apriltag', 'pythonpath_develop')
+[0.976s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/verity-xie/Unibots 2026/test_ws/build/pv_apriltag' returned '0': PYTHONPATH=/home/verity-xie/Unibots 2026/test_ws/build/pv_apriltag/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/verity-xie/Unibots 2026/test_ws/build/pv_apriltag/build --no-deps symlink_data
+[0.976s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/verity-xie/Unibots 2026/test_ws/build/pv_apriltag/share/pv_apriltag/hook/pythonpath_develop.ps1'
+[0.977s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/verity-xie/Unibots 2026/test_ws/build/pv_apriltag/share/pv_apriltag/hook/pythonpath_develop.dsv'
+[0.977s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/verity-xie/Unibots 2026/test_ws/build/pv_apriltag/share/pv_apriltag/hook/pythonpath_develop.sh'
+[0.978s] Level 1:colcon.colcon_core.environment:checking '/home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag' for CMake module files
+[0.978s] Level 1:colcon.colcon_core.environment:checking '/home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag' for CMake config files
+[0.978s] Level 1:colcon.colcon_core.environment:checking '/home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag/lib'
+[0.979s] Level 1:colcon.colcon_core.environment:checking '/home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag/bin'
+[0.979s] Level 1:colcon.colcon_core.environment:checking '/home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag/lib/pkgconfig/pv_apriltag.pc'
+[0.979s] Level 1:colcon.colcon_core.environment:checking '/home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag/lib/python3.10/site-packages'
+[0.979s] Level 1:colcon.colcon_core.shell:create_environment_hook('pv_apriltag', 'pythonpath')
+[0.979s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag/share/pv_apriltag/hook/pythonpath.ps1'
+[0.979s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag/share/pv_apriltag/hook/pythonpath.dsv'
+[0.980s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag/share/pv_apriltag/hook/pythonpath.sh'
+[0.980s] Level 1:colcon.colcon_core.environment:checking '/home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag/bin'
+[0.980s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pv_apriltag)
+[0.981s] INFO:colcon.colcon_core.shell:Creating package script '/home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag/share/pv_apriltag/package.ps1'
+[0.981s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag/share/pv_apriltag/package.dsv'
+[0.981s] INFO:colcon.colcon_core.shell:Creating package script '/home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag/share/pv_apriltag/package.sh'
+[0.982s] INFO:colcon.colcon_core.shell:Creating package script '/home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag/share/pv_apriltag/package.bash'
+[0.982s] INFO:colcon.colcon_core.shell:Creating package script '/home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag/share/pv_apriltag/package.zsh'
+[0.982s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag/share/colcon-core/packages/pv_apriltag)
+[0.992s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/verity-xie/Unibots 2026/test_ws/build/webots_ros2_importer' returned '1': PYTHONPATH=/home/verity-xie/Unibots 2026/test_ws/build/webots_ros2_importer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_importer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/verity-xie/Unibots 2026/test_ws/build/webots_ros2_importer/build --no-deps symlink_data
+[2.906s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.906s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.906s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[2.906s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.910s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.910s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.910s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.922s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.923s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/verity-xie/Unibots 2026/test_ws/install/local_setup.ps1'
+[2.924s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/verity-xie/Unibots 2026/test_ws/install/_local_setup_util_ps1.py'
+[2.926s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/verity-xie/Unibots 2026/test_ws/install/setup.ps1'
+[2.927s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/verity-xie/Unibots 2026/test_ws/install/local_setup.sh'
+[2.928s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/verity-xie/Unibots 2026/test_ws/install/_local_setup_util_sh.py'
+[2.929s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/verity-xie/Unibots 2026/test_ws/install/setup.sh'
+[2.931s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/verity-xie/Unibots 2026/test_ws/install/local_setup.bash'
+[2.932s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/verity-xie/Unibots 2026/test_ws/install/setup.bash'
+[2.933s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/verity-xie/Unibots 2026/test_ws/install/local_setup.zsh'
+[2.934s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/verity-xie/Unibots 2026/test_ws/install/setup.zsh'

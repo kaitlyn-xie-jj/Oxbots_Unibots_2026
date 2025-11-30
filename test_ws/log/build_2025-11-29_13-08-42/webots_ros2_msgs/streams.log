@@ -1,0 +1,63 @@
+[0.131s] Invoking command in '/home/verity-xie/Unibots 2026/test_ws/build/webots_ros2_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag:/home/verity-xie/Unibots 2026/test_ws/install/ball_detection:/opt/ros/humble /usr/bin/cmake --build /home/verity-xie/Unibots 2026/test_ws/build/webots_ros2_msgs -- -j32 -l32
+[0.251s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.251s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.251s] -- Found builtin_interfaces: 1.2.2 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[0.251s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.251s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.251s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.251s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.251s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.251s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.252s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.263s] -- Found vision_msgs: 4.1.1 (/opt/ros/humble/share/vision_msgs/cmake)
+[0.467s] -- Found ament_cmake_cppcheck: 0.12.14 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)
+[0.467s] -- Found ament_cmake_cpplint: 0.12.14 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)
+[0.467s] -- Found ament_cmake_uncrustify: 0.12.14 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)
+[0.468s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.714s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.817s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.845s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.870s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.871s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.871s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[0.892s] -- Found ament_cmake_flake8: 0.12.14 (/opt/ros/humble/share/ament_cmake_flake8/cmake)
+[0.892s] -- Found ament_cmake_pep257: 0.12.14 (/opt/ros/humble/share/ament_cmake_pep257/cmake)
+[0.894s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.898s] -- Added test 'lint_cmake' to check CMake code style
+[0.898s] -- Added test 'xmllint' to check XML markup files
+[0.899s] -- Configuring done
+[0.924s] -- Generating done
+[0.930s] -- Build files have been written to: /home/verity-xie/Unibots 2026/test_ws/build/webots_ros2_msgs
+[0.950s] [35m[1mConsolidate compiler generated dependencies of target webots_ros2_msgs__rosidl_generator_c[0m
+[0.958s] [  0%] Built target webots_ros2_msgs__cpp
+[0.958s] [ 12%] Built target webots_ros2_msgs__rosidl_generator_c
+[0.960s] [ 12%] Built target ament_cmake_python_symlink_webots_ros2_msgs
+[0.966s] [35m[1mConsolidate compiler generated dependencies of target webots_ros2_msgs__rosidl_typesupport_introspection_cpp[0m
+[0.967s] [35m[1mConsolidate compiler generated dependencies of target webots_ros2_msgs__rosidl_typesupport_cpp[0m
+[0.967s] [35m[1mConsolidate compiler generated dependencies of target webots_ros2_msgs__rosidl_typesupport_c[0m
+[0.968s] [35m[1mConsolidate compiler generated dependencies of target webots_ros2_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[0.968s] [35m[1mConsolidate compiler generated dependencies of target webots_ros2_msgs__rosidl_typesupport_introspection_c[0m
+[0.968s] [35m[1mConsolidate compiler generated dependencies of target webots_ros2_msgs__rosidl_typesupport_fastrtps_c[0m
+[0.976s] [ 24%] Built target webots_ros2_msgs__rosidl_typesupport_c
+[0.977s] [ 36%] Built target webots_ros2_msgs__rosidl_typesupport_introspection_cpp
+[0.978s] [ 48%] Built target webots_ros2_msgs__rosidl_typesupport_introspection_c
+[0.980s] [ 60%] Built target webots_ros2_msgs__rosidl_typesupport_fastrtps_c
+[0.980s] [ 72%] Built target webots_ros2_msgs__rosidl_typesupport_cpp
+[0.981s] [ 83%] Built target webots_ros2_msgs__rosidl_typesupport_fastrtps_cpp
+[0.995s] [ 83%] Built target webots_ros2_msgs
+[1.011s] [ 84%] Built target webots_ros2_msgs__py
+[1.019s] [35m[1mConsolidate compiler generated dependencies of target webots_ros2_msgs__rosidl_generator_py[0m
+[1.033s] [ 95%] Built target webots_ros2_msgs__rosidl_generator_py
+[1.040s] [35m[1mConsolidate compiler generated dependencies of target webots_ros2_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[1.040s] [35m[1mConsolidate compiler generated dependencies of target webots_ros2_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[1.040s] [35m[1mConsolidate compiler generated dependencies of target webots_ros2_msgs__rosidl_typesupport_c__pyext[0m
+[1.048s] [ 97%] Built target webots_ros2_msgs__rosidl_typesupport_fastrtps_c__pyext
+[1.049s] [100%] Built target webots_ros2_msgs__rosidl_typesupport_c__pyext
+[1.049s] [100%] Built target webots_ros2_msgs__rosidl_typesupport_introspection_c__pyext
+[1.070s] running egg_info
+[1.071s] writing webots_ros2_msgs.egg-info/PKG-INFO
+[1.071s] writing dependency_links to webots_ros2_msgs.egg-info/dependency_links.txt
+[1.071s] writing top-level names to webots_ros2_msgs.egg-info/top_level.txt
+[1.072s] reading manifest file 'webots_ros2_msgs.egg-info/SOURCES.txt'
+[1.072s] writing manifest file 'webots_ros2_msgs.egg-info/SOURCES.txt'
+[1.087s] [100%] Built target ament_cmake_python_build_webots_ros2_msgs_egg

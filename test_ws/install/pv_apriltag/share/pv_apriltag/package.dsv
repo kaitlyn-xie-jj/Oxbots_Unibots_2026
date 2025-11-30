@@ -1,0 +1,9 @@
+source;share/pv_apriltag/hook/pythonpath.ps1
+source;share/pv_apriltag/hook/pythonpath.dsv
+source;share/pv_apriltag/hook/pythonpath.sh
+source;share/pv_apriltag/hook/ament_prefix_path.ps1
+source;share/pv_apriltag/hook/ament_prefix_path.dsv
+source;share/pv_apriltag/hook/ament_prefix_path.sh
+source;../../build/pv_apriltag/share/pv_apriltag/hook/pythonpath_develop.ps1
+source;../../build/pv_apriltag/share/pv_apriltag/hook/pythonpath_develop.dsv
+source;../../build/pv_apriltag/share/pv_apriltag/hook/pythonpath_develop.sh

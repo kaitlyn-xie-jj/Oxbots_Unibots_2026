@@ -1,0 +1,12 @@
+package.xml
+setup.cfg
+setup.py
+ball_detection/__init__.py
+ball_detection.egg-info/PKG-INFO
+ball_detection.egg-info/SOURCES.txt
+ball_detection.egg-info/dependency_links.txt
+ball_detection.egg-info/entry_points.txt
+ball_detection.egg-info/requires.txt
+ball_detection.egg-info/top_level.txt
+ball_detection.egg-info/zip-safe
+resource/ball_detection

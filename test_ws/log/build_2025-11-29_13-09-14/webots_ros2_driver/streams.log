@@ -1,0 +1,52 @@
+[0.007s] Invoking command in '/home/verity-xie/Unibots 2026/test_ws/build/webots_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag:/home/verity-xie/Unibots 2026/test_ws/install/ball_detection:/opt/ros/humble /usr/bin/cmake --build /home/verity-xie/Unibots 2026/test_ws/build/webots_ros2_driver -- -j32 -l32
+[0.023s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.086s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.089s] -- Found rosgraph_msgs: 1.2.2 (/opt/ros/humble/share/rosgraph_msgs/cmake)
+[0.100s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.102s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.104s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.109s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.114s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.125s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.137s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.137s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.191s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.210s] -- Found pluginlib: 5.1.2 (/opt/ros/humble/share/pluginlib/cmake)
+[0.216s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.230s] -- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.231s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.232s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.270s] -- Found vision_msgs: 4.1.1 (/opt/ros/humble/share/vision_msgs/cmake)
+[0.277s] -- Found webots_ros2_msgs: 2025.0.1 (/home/verity-xie/Unibots 2026/test_ws/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake)
+[0.286s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.617s] -- Configuring done
+[0.628s] -- Generating done
+[0.632s] -- Build files have been written to: /home/verity-xie/Unibots 2026/test_ws/build/webots_ros2_driver
+[0.670s] [  0%] Built target ament_cmake_python_symlink_controller
+[0.670s] [  0%] Built target ament_cmake_python_symlink_vehicle
+[0.671s] [  0%] Built target ament_cmake_python_symlink_webots_ros2_driver
+[0.784s] running egg_info
+[0.784s] running egg_info
+[0.784s] writing vehicle.egg-info/PKG-INFO
+[0.784s] writing controller.egg-info/PKG-INFO
+[0.785s] writing dependency_links to vehicle.egg-info/dependency_links.txt
+[0.785s] writing dependency_links to controller.egg-info/dependency_links.txt
+[0.785s] writing top-level names to vehicle.egg-info/top_level.txt
+[0.785s] writing top-level names to controller.egg-info/top_level.txt
+[0.785s] reading manifest file 'vehicle.egg-info/SOURCES.txt'
+[0.786s] reading manifest file 'controller.egg-info/SOURCES.txt'
+[0.786s] writing manifest file 'vehicle.egg-info/SOURCES.txt'
+[0.786s] writing manifest file 'controller.egg-info/SOURCES.txt'
+[0.789s] running egg_info
+[0.789s] writing webots_ros2_driver.egg-info/PKG-INFO
+[0.789s] writing dependency_links to webots_ros2_driver.egg-info/dependency_links.txt
+[0.789s] writing top-level names to webots_ros2_driver.egg-info/top_level.txt
+[0.790s] reading manifest file 'webots_ros2_driver.egg-info/SOURCES.txt'
+[0.790s] writing manifest file 'webots_ros2_driver.egg-info/SOURCES.txt'
+[0.801s] [  0%] Built target ament_cmake_python_build_vehicle_egg
+[0.801s] [  0%] Built target ament_cmake_python_build_controller_egg
+[0.805s] [  0%] Built target ament_cmake_python_build_webots_ros2_driver_egg
+[7.120s] gmake[2]: *** [CMakeFiles/compile-lib-controller.dir/build.make:70: CMakeFiles/compile-lib-controller] Error 2
+[7.121s] gmake[1]: *** [CMakeFiles/Makefile2:156: CMakeFiles/compile-lib-controller.dir/all] Error 2
+[7.121s] gmake: *** [Makefile:146: all] Error 2
+[7.123s] Invoked command in '/home/verity-xie/Unibots 2026/test_ws/build/webots_ros2_driver' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag:/home/verity-xie/Unibots 2026/test_ws/install/ball_detection:/opt/ros/humble /usr/bin/cmake --build /home/verity-xie/Unibots 2026/test_ws/build/webots_ros2_driver -- -j32 -l32

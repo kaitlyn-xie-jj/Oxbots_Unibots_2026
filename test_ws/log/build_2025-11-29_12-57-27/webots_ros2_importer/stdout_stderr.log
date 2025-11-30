@@ -1,0 +1,8 @@
+running develop
+running egg_info
+writing webots_ros2_importer.egg-info/PKG-INFO
+writing dependency_links to webots_ros2_importer.egg-info/dependency_links.txt
+writing entry points to webots_ros2_importer.egg-info/entry_points.txt
+writing requirements to webots_ros2_importer.egg-info/requires.txt
+writing top-level names to webots_ros2_importer.egg-info/top_level.txt
+error: package directory 'webots_ros2_importer/urdf2webots/urdf2webots' does not exist

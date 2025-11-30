@@ -1,0 +1,4 @@
+[console_scripts]
+urdf2proto = webots_ros2_importer.urdf2proto:main
+xacro2proto = webots_ros2_importer.xacro2proto:main
+
