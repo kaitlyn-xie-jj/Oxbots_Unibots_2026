@@ -122,3 +122,26 @@ It sends command to those function part like intake to control them.
 
 ---
 
+
+## Why We Use PhotonVision on the Real Robot  
+(Official Website: **https://photonvision.org**)
+
+For the real robot, we use **PhotonVision (PV)** as our primary AprilTag detection and pose estimation system. In real competition environments like Unibots, PV offers several key advantages that make it both practical and reliable:
+
+- **High reliability and real-time performance**  
+  PhotonVision is optimized for embedded hardware and delivers fast, stable, low-latency AprilTag detection without requiring us to write our own vision algorithms.
+
+- **Built-in pose estimation**  
+  PV automatically combines camera calibration, robot-to-camera extrinsics, and field tag layout to compute the robot’s global pose. This eliminates the need for custom localization code on the robot.
+
+- **Excellent Web UI for tuning and debugging**  
+  The PhotonVision UI lets us view the camera feed, adjust exposure, test tag detection, and verify calibration in real time—without recompiling or redeploying any robot code.
+
+- **Easy on-field adjustments**  
+  Lighting, reflections, and camera alignment can change during competition. PV allows us to tune parameters or recalibrate instantly on the field, ensuring consistent detection performance throughout the event.
+
+- **Battle-tested community reliability**  
+  PV is widely used in FRC and other robotics competitions, with strong community support, documentation, and proven stability under real-world conditions.
+
+Thanks to these advantages, PhotonVision provides a robust, efficient, and highly tunable vision system for our real robot, significantly reducing development complexity while improving on-site adaptability.
+
