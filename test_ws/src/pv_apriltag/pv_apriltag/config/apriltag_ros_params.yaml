@@ -1,0 +1,47 @@
+# apriltag_params.yaml
+apriltag:
+  ros__parameters:
+    # 基本设置
+    use_sim_time: true             # 仿真环境请保持 true（Webots）
+    image_transport: raw           # raw 或 compressed，按你的图像 topic 类型选择
+    family: 36h11                  # tag family, 例如 36h11（与你纹理使用的一致）
+    size: 0.10                     # 默认 tag 边长 (m) —— Webots PROTO 使用 0.10m
+    pose_estimation_method: "pnp"  # 使用 PnP（推荐）
+    profile: false                 # 是否打印 profiling 信息
+    qos_profile: sensor_data
+
+    # 检测调参（可按需要修改）
+    max_hamming: 0                 # 允许的最大纠错位数（0 最严格）
+    detector:
+      threads: 1                   # 检测线程数
+      decimate: 1.0                # Py/Apriltag 的 decimate（较小更精确但慢，仿真可设 1.0）
+      blur: 0.0                    # 高斯模糊 sigma
+      refine: True                    # 是否 refine 边角
+      sharpening: 0.25             # 图像锐化
+      debug: False                    # debug 输出（写图片到 cwd）
+
+    # 可选：tag 列表（当你希望只发布特定标签时）
+    # 列出你场地中所有标签 ID（0..23）并指定对应的 frame 名与 per-tag 大小（覆盖上面的默认 size）
+    tag:
+      ids:  [0, 1, 2, 3, 4, 5,
+             6, 7, 8, 9, 10, 11,
+             17,16,15,14,13,12,
+             23,22,21,20,19,18]
+      frames: [
+        "tag36h11:0","tag36h11:1","tag36h11:2","tag36h11:3","tag36h11:4","tag36h11:5",
+        "tag36h11:6","tag36h11:7","tag36h11:8","tag36h11:9","tag36h11:10","tag36h11:11",
+        "tag36h11:17","tag36h11:16","tag36h11:15","tag36h11:14","tag36h11:13","tag36h11:12",
+        "tag36h11:23","tag36h11:22","tag36h11:21","tag36h11:20","tag36h11:19","tag36h11:18"
+      ]
+      sizes: [
+        0.10,0.10,0.10,0.10,0.10,0.10,
+        0.10,0.10,0.10,0.10,0.10,0.10,
+        0.10,0.10,0.10,0.10,0.10,0.10,
+        0.10,0.10,0.10,0.10,0.10,0.10
+      ]
+
+    # QoS overrides（可按需微调，通常不必改）
+    
+
+    # 其它可用参数（保留默认）
+    # profile, image_transport_plugins 等会按包默认值生效

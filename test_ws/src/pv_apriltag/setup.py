@@ -27,6 +27,8 @@ setup(
             'pv_node = pv_apriltag.pv_node:main',           # 实机
             'pv_sim_bridge = pv_apriltag.pv_sim_bridge:main', # 仿真
             'epuck_camera_info = pv_apriltag.epuck_camera_info_node:main',
+            'publish_tags_and_markers = pv_apriltag.publish_tags_and_markers:main',
+            'apriltag_map_localizer = pv_apriltag.apriltag_map_localizer:main'
         ],
     },
 )

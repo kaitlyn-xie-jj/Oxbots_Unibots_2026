@@ -1,0 +1,21 @@
+running develop
+running egg_info
+creating ball_detection.egg-info
+writing ball_detection.egg-info/PKG-INFO
+writing dependency_links to ball_detection.egg-info/dependency_links.txt
+writing entry points to ball_detection.egg-info/entry_points.txt
+writing requirements to ball_detection.egg-info/requires.txt
+writing top-level names to ball_detection.egg-info/top_level.txt
+writing manifest file 'ball_detection.egg-info/SOURCES.txt'
+reading manifest file 'ball_detection.egg-info/SOURCES.txt'
+writing manifest file 'ball_detection.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/verity-xie/Unibots 2026/test_ws/install/ball_detection/lib/python3.10/site-packages/ball-detection.egg-link (link to .)
+
+Installed /home/verity-xie/Unibots 2026/test_ws/build/ball_detection
+running symlink_data
+creating /home/verity-xie/Unibots 2026/test_ws/install/ball_detection/share/ament_index
+creating /home/verity-xie/Unibots 2026/test_ws/install/ball_detection/share/ament_index/resource_index
+creating /home/verity-xie/Unibots 2026/test_ws/install/ball_detection/share/ament_index/resource_index/packages
+symbolically linking /home/verity-xie/Unibots 2026/test_ws/build/ball_detection/resource/ball_detection -> /home/verity-xie/Unibots 2026/test_ws/install/ball_detection/share/ament_index/resource_index/packages
+symbolically linking /home/verity-xie/Unibots 2026/test_ws/build/ball_detection/package.xml -> /home/verity-xie/Unibots 2026/test_ws/install/ball_detection/share/ball_detection
