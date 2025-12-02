@@ -9,142 +9,142 @@
   frame: tag36h11:0
   position: [-0.85, 1.0, 0.075]
   orientation: [0.70710678, 0.0, 0.0, 0.70710678]
-  size: 0.10
+  size: 0.08
 
 1:
   frame: tag36h11:1
   position: [-0.55, 1.0, 0.075]
   orientation: [0.70710678, 0.0, 0.0, 0.70710678]
-  size: 0.10
+  size: 0.08
 
 2:
   frame: tag36h11:2
   position: [-0.25, 1.0, 0.075]
   orientation: [0.70710678, 0.0, 0.0, 0.70710678]
-  size: 0.10
+  size: 0.08
 
 3:
   frame: tag36h11:3
   position: [0.25, 1.0, 0.075]
   orientation: [0.70710678, 0.0, 0.0, 0.70710678]
-  size: 0.10
+  size: 0.08
 
 4:
   frame: tag36h11:4
   position: [0.55, 1.0, 0.075]
   orientation: [0.70710678, 0.0, 0.0, 0.70710678]
-  size: 0.10
+  size: 0.08
 
 5:
   frame: tag36h11:5
   position: [0.85, 1.0, 0.075]
   orientation: [0.70710678, 0.0, 0.0, 0.70710678]
-  size: 0.10
+  size: 0.08
 
 6:
   frame: tag36h11:6
   position: [1.0, 0.85, 0.075]
   orientation: [0.5, -0.5, -0.5, 0.5]
-  size: 0.10
+  size: 0.08
 
 7:
   frame: tag36h11:7
   position: [1.0, 0.55, 0.075]
   orientation: [0.5, -0.5, -0.5, 0.5]
-  size: 0.10
+  size: 0.08
 
 8:
   frame: tag36h11:8
   position: [1.0, 0.25, 0.075]
   orientation: [0.5, -0.5, -0.5, 0.5]
-  size: 0.10
+  size: 0.08
 
 9:
   frame: tag36h11:9
   position: [1.0, -0.25, 0.075]
   orientation: [0.5, -0.5, -0.5, 0.5]
-  size: 0.10
+  size: 0.08
 
 10:
   frame: tag36h11:10
   position: [1.0, -0.55, 0.075]
   orientation: [0.5, -0.5, -0.5, 0.5]
-  size: 0.10
+  size: 0.08
 
 11:
   frame: tag36h11:11
   position: [1.0, -0.85, 0.075]
   orientation: [0.5, -0.5, -0.5, 0.5]
-  size: 0.10
+  size: 0.08
 
 12:
   frame: tag36h11:12
   position: [0.85, -1.0, 0.075]
   orientation: [0.0, -0.70710678, -0.70710678, 0.0]
-  size: 0.10
+  size: 0.08
 
 13:
   frame: tag36h11:13
   position: [0.55, -1.0, 0.075]
   orientation: [0.0, -0.70710678, -0.70710678, 0.0]
-  size: 0.10
+  size: 0.08
 
 14:
   frame: tag36h11:14
   position: [0.25, -1.0, 0.075]
   orientation: [0.0, -0.70710678, -0.70710678, 0.0]
-  size: 0.10
+  size: 0.08
 
 15:
   frame: tag36h11:15
   position: [-0.25, -1.0, 0.075]
   orientation: [0.0, -0.70710678, -0.70710678, 0.0]
-  size: 0.10
+  size: 0.08
 
 16:
   frame: tag36h11:16
   position: [-0.55, -1.0, 0.075]
   orientation: [0.0, -0.70710678, -0.70710678, 0.0]
-  size: 0.10
+  size: 0.08
 
 17:
   frame: tag36h11:17
   position: [-0.85, -1.0, 0.075]
   orientation: [0.0, -0.70710678, -0.70710678, 0.0]
-  size: 0.10
+  size: 0.08
 
 18:
   frame: tag36h11:18
   position: [-1.0, -0.85, 0.075]
   orientation: [0.5, 0.5, 0.5, 0.5]
-  size: 0.10
+  size: 0.08
 
 19:
   frame: tag36h11:19
   position: [-1.0, -0.55, 0.075]
   orientation: [0.5, 0.5, 0.5, 0.5]
-  size: 0.10
+  size: 0.08
 
 20:
   frame: tag36h11:20
   position: [-1.0, -0.25, 0.075]
   orientation: [0.5, 0.5, 0.5, 0.5]
-  size: 0.10
+  size: 0.08
 
 21:
   frame: tag36h11:21
   position: [-1.0, 0.25, 0.075]
   orientation: [0.5, 0.5, 0.5, 0.5]
-  size: 0.10
+  size: 0.08
 
 22:
   frame: tag36h11:22
   position: [-1.0, 0.55, 0.075]
   orientation: [0.5, 0.5, 0.5, 0.5]
-  size: 0.10
+  size: 0.08
 
 23:
   frame: tag36h11:23
   position: [-1.0, 0.85, 0.075]
   orientation: [0.5, 0.5, 0.5, 0.5]
-  size: 0.10
+  size: 0.08

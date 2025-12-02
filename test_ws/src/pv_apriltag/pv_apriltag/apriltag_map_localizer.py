@@ -1,126 +1,84 @@
 #!/usr/bin/env python3
 """
-apriltag_map_localizer.py (fixed, robust)
+apriltag_map_localizer.py (per-tag visualization version)
 
 功能:
 - 读取 field/layout yaml (map->tag poses)
-- 订阅 /tf (tf2_msgs/msg/TFMessage) 中 apriltag 发布的 tag transforms
-- 基于每个 tag 的已知 map->tag 和 apriltag 发布的 cam->tag 反推 camera 在 map 下的 pose:
+- 订阅 /tf 中 apriltag 发布的 tag transforms
+- 对每个检测到并在 layout 中的 tag 单独计算:
     T_map_cam = T_map_tag * inv(T_cam_tag)
-- 多个 tag 同时可用时做简单融合（位置平均，四元数平均）
-- 发布 map->camera Transform（tf broadcaster）
-- 发布 geometry_msgs/PoseStamped -> topic /camera_in_map
-- 发布 visualization Marker -> topic /camera_in_map_marker
+- 为每个 tag 的结果分别:
+    - 广播一个 map->camera_by_tag TF (child_frame_id = "<camera>_by_<tag>")
+    - 发布 PoseStamped 到 topic /camera_in_map_by_tag
+    - 发布 visualization Marker 到 /camera_in_map_marker_by_tag
+- 不再对多个 tag 做平均/融合
 
 用法:
-  python3 apriltag_map_localizer.py --layout ~/field_layout_inward.yaml
-或在 ROS2 package 中:
-  ros2 run pv_apriltag apriltag_map_localizer -- --layout ~/field_layout_inward.yaml
-
-注意:
-- 需要依赖: rclpy, tf_transformations, numpy, pyyaml, visualization_msgs
+  python3 apriltag_map_localizer.py --layout ~/field_layout.yaml
 """
-
 import rclpy
 from rclpy.node import Node
 import yaml
 import os
 import math
 import numpy as np
-import sys
 from geometry_msgs.msg import TransformStamped, PoseStamped
 from tf2_msgs.msg import TFMessage
+from tf_transformations import quaternion_matrix, quaternion_from_matrix
+from tf2_ros import TransformBroadcaster
 from visualization_msgs.msg import Marker
 
-# tf_transformations 常用函数
-try:
-    from tf_transformations import (
-        quaternion_matrix,
-        quaternion_from_matrix,
-        quaternion_multiply,
-        quaternion_inverse,
-    )
-except Exception as e:
-    # 如果没有 tf_transformations，退出并提示
-    print("ERROR: tf_transformations is required. Install python3-tf-transformations or the package that provides it.")
-    raise
-
 # -----------------------------
-# Math helpers (quaternions/matrices)
+# Math helpers (quaternions)
 # -----------------------------
 def q_to_matrix(q):
-    """q: [x,y,z,w] -> 4x4 matrix"""
-    return quaternion_matrix(q)
-
-def matrix_to_q_safe(M):
-    """
-    返回 [x,y,z,w]，兼容 quaternion_from_matrix 返回 tuple 或 ndarray
-    """
-    q_raw = quaternion_from_matrix(M)
-    # q_raw may be tuple or ndarray; convert to list of floats
-    return [float(q_raw[0]), float(q_raw[1]), float(q_raw[2]), float(q_raw[3])]
-
-def q_inverse(q):
-    return quaternion_inverse(q)
-
-def q_mul(q1, q2):
-    return quaternion_multiply(q1, q2)
+    # q: [x,y,z,w]
+    M4 = quaternion_matrix(q)  # returns 4x4
+    return M4
 
 def transform_to_matrix(translation, quat):
-    """
-    translation: [x,y,z], quat: [x,y,z,w]
-    return 4x4 numpy matrix
-    """
+    # translation: [x,y,z], quat: [x,y,z,w]
     M = q_to_matrix(quat)
-    M = np.array(M, dtype=float)
-    M[0:3, 3] = np.array(translation, dtype=float)
+    M[0:3,3] = np.array(translation, dtype=float)
     return M
 
-def matrix_to_transform_safe(M):
+def matrix_to_transform(M):
     """
-    输入 4x4 numpy 矩阵，返回 (translation_list, quat_list)
-    quat_list 保证为 [x,y,z,w] floats
+    Convert 4x4 matrix to (translation_list, quaternion_list).
+    quaternion_from_matrix may return tuple/array; normalize to list safely.
     """
-    M = np.array(M, dtype=float)
-    t = M[0:3, 3].astype(float).tolist()
-    q = matrix_to_q_safe(M)
+    t = M[0:3, 3].tolist()
+    q_raw = quaternion_from_matrix(M)
+    # quaternion_from_matrix may return tuple, list or numpy array.
+    # convert robustly to list of floats.
+    try:
+        q = list(map(float, q_raw))
+    except Exception:
+        # fallback: try np.asarray
+        import numpy as _np
+        q = _np.asarray(q_raw, dtype=float).tolist()
     return t, q
-
-def normalize_quat_sum(quats):
-    """
-    简单平均四元数：把四元数向量求和再归一化
-    quats: list of [x,y,z,w]
-    """
-    arr = np.array(quats, dtype=float)
-    s = arr.sum(axis=0)
-    n = np.linalg.norm(s)
-    if n < 1e-12:
-        return [0.0, 0.0, 0.0, 1.0]
-    return (s / n).tolist()
 
 # -----------------------------
 # Layout loader
 # -----------------------------
 def load_layout(path):
-    path = os.path.expanduser(path)
-    if not os.path.exists(path):
-        raise FileNotFoundError(f"Layout file not found: {path}")
-    data = yaml.safe_load(open(path, 'r'))
+    data = yaml.safe_load(open(os.path.expanduser(path), 'r'))
     out = {}
-    for k, v in data.items():
+    for k,v in data.items():
         if isinstance(v, dict):
             frame = v.get('frame', f"tag{k}")
-            pos = v.get('position', [0.0, 0.0, 0.0])
-            ori = v.get('orientation', [0.0, 0.0, 0.0, 1.0])
+            pos = v.get('position', [0.0,0.0,0.0])
+            ori = v.get('orientation', [0.0,0.0,0.0,1.0])
             out[str(frame)] = {
-                'position': [float(pos[0]), float(pos[1]), float(pos[2] if len(pos) > 2 else 0.0)],
+                'position': [float(pos[0]), float(pos[1]), float(pos[2] if len(pos)>2 else 0.0)],
                 'orientation': [float(ori[0]), float(ori[1]), float(ori[2]), float(ori[3])]
             }
         else:
             frame = f"tag{k}"
             out[str(frame)] = {
-                'position': [0.0, 0.0, 0.0],
-                'orientation': [0.0, 0.0, 0.0, 1.0]
+                'position': [0.0,0.0,0.0],
+                'orientation': [0.0,0.0,0.0,1.0]
             }
     return out
 
@@ -130,118 +88,86 @@ def load_layout(path):
 class ApriltagMapLocalizer(Node):
     def __init__(self, layout_path, camera_frame_override=None, publish_rate=10.0):
         super().__init__('apriltag_map_localizer')
-        try:
-            self.layout = load_layout(layout_path)
-        except Exception as e:
-            self.get_logger().error(f"Failed to load layout: {e}")
-            raise
-
+        self.layout = load_layout(os.path.expanduser(layout_path))
         self.get_logger().info(f"Loaded {len(self.layout)} tags from {layout_path}")
         self.camera_frame_override = camera_frame_override
 
-        # tf broadcaster
-        try:
-            from tf2_ros import TransformBroadcaster
-            self.tf_broadcaster = TransformBroadcaster(self)
-        except Exception:
-            self.get_logger().warning("tf2_ros.TransformBroadcaster not available; transform broadcasting will fail if required.")
-            self.tf_broadcaster = None
+        # Tf publisher
+        self.tf_broadcaster = TransformBroadcaster(self)
 
-        self.pose_pub = self.create_publisher(PoseStamped, 'camera_in_map', 10)
-        self.marker_pub = self.create_publisher(Marker, 'camera_in_map_marker', 10)
+        # single publisher topics for per-tag results
+        self.pose_pub = self.create_publisher(PoseStamped, 'camera_in_map_by_tag', 10)
+        # we will publish marker per tag with unique ns "camera_in_map_by_tag"
+        self.marker_pub = self.create_publisher(Marker, 'camera_in_map_marker_by_tag', 10)
+
+        # subscribe to /tf
         self.tf_sub = self.create_subscription(TFMessage, '/tf', self.tf_callback, 10)
 
-        self.last_camera_transform = None
-        self.camera_frame_name = None
-        self.timer = self.create_timer(1.0 / float(publish_rate), self.timer_cb)
+        # store last per-tag transforms for timer republish
+        # dict: child_tag_frame -> TransformStamped
+        self.last_camera_transforms = {}
+
+        # timer to republish last poses at given rate (helps RViz)
+        self.timer = self.create_timer(1.0/float(publish_rate), self.timer_cb)
 
     def timer_cb(self):
-        if self.last_camera_transform is None:
-            return
-        ts = self.last_camera_transform
-        # broadcast
-        if self.tf_broadcaster is not None:
-            try:
-                self.tf_broadcaster.sendTransform(ts)
-            except Exception as e:
-                self.get_logger().warning(f"Failed to broadcast transform: {e}")
-        # publish PoseStamped
-        pose = PoseStamped()
-        pose.header.stamp = ts.header.stamp
-        pose.header.frame_id = ts.header.frame_id
-        pose.pose.position.x = ts.transform.translation.x
-        pose.pose.position.y = ts.transform.translation.y
-        pose.pose.position.z = ts.transform.translation.z
-        pose.pose.orientation = ts.transform.rotation
-        self.pose_pub.publish(pose)
-        # publish marker
-        m = Marker()
-        m.header = pose.header
-        m.ns = "camera_in_map"
-        m.id = 0
-        m.type = Marker.ARROW
-        m.action = Marker.ADD
-        m.pose = pose.pose
-        m.scale.x = 0.25
-        m.scale.y = 0.06
-        m.scale.z = 0.06
-        m.color.r = 1.0
-        m.color.g = 0.0
-        m.color.b = 0.0
-        m.color.a = 1.0
-        self.marker_pub.publish(m)
+        # republish all last camera transforms (one per tag) so RViz keeps them visible
+        for tag_frame, ts in self.last_camera_transforms.items():
+            # broadcast TF
+            self.tf_broadcaster.sendTransform(ts)
+            # publish PoseStamped
+            pose = PoseStamped()
+            pose.header = ts.header
+            pose.header.frame_id = 'map'
+            pose.pose.position.x = ts.transform.translation.x
+            pose.pose.position.y = ts.transform.translation.y
+            pose.pose.position.z = ts.transform.translation.z
+            pose.pose.orientation = ts.transform.rotation
+            # include tag frame in header stamp? keep as map
+            self.pose_pub.publish(pose)
+            # Marker
+            m = Marker()
+            m.header = pose.header
+            m.ns = "camera_in_map_by_tag"
+            # choose id deterministically from tag_frame string
+            m.id = abs(hash(tag_frame)) % 10000
+            m.type = Marker.ARROW
+            m.action = Marker.ADD
+            m.pose = pose.pose
+            m.scale.x = 0.2
+            m.scale.y = 0.06
+            m.scale.z = 0.06
+            # color by tag (hash to rgb)
+            h = abs(hash(tag_frame)) % 360
+            # simple hue->rgb mapping (approx)
+            r = ((h % 180) / 180.0)
+            g = (((h+60) % 180) / 180.0)
+            b = (((h+120) % 180) / 180.0)
+            m.color.r = float(r)
+            m.color.g = float(g)
+            m.color.b = float(b)
+            m.color.a = 1.0
+            self.marker_pub.publish(m)
+
+    def sanitize_tag_frame_for_name(self, s: str):
+        # make a safe name for child_frame_id by replacing characters like ':' with '_'
+        return s.replace(':','_').replace('/','_')
 
     def tf_callback(self, msg: TFMessage):
         """
-        For each TransformStamped in /tf published by apriltag detector:
-          - expect parent = camera_frame, child = tag frame (e.g. tag36h11:5)
-          - if child in layout, compute candidate T_map_cam = T_map_tag * inv(T_cam_tag)
-        Then fuse candidates and publish map->camera transform.
+        For each TransformStamped in /tf where child_frame_id is a tag in layout,
+        compute per-tag camera pose in map and publish it separately.
         """
-        candidates_trans = []
-        candidates_quat = []
-        camera_frame_seen = None
-        count = 0
-
         for t in msg.transforms:
-            # t: geometry_msgs/TransformStamped
-            child = getattr(t, 'child_frame_id', '') or ''
-            parent = getattr(t, 'header', None)
-            if parent is not None:
-                parent = getattr(t.header, 'frame_id', None)
-            # normalize string types
-            child = str(child)
-            parent = str(parent) if parent is not None else None
-
-            # Check child against layout keys; some systems use 'tagXX' or 'tag36h11:ID'
+            child = t.child_frame_id
+            parent = t.header.frame_id  # expected camera frame (as published by apriltag)
             if child not in self.layout:
-                # try common alternative (if child is 'tag36h11:5' but layout keys are 'tag36h11:5' it's fine)
-                # else maybe layout used only numeric keys -> try 'tag36h11:<id>'
-                # try parse numeric id from child
-                try:
-                    import re
-                    m = re.search(r'(\d+)', child)
-                    if m:
-                        cid = m.group(1)
-                        alt = f"tag36h11:{cid}"
-                        if alt in self.layout:
-                            child = alt
-                        else:
-                            # maybe layout keys use just numeric string
-                            if cid in self.layout:
-                                child = cid
-                            else:
-                                continue
-                    else:
-                        continue
-                except Exception:
-                    continue
+                continue
 
-            # use camera frame if not overridden
-            if self.camera_frame_override is None:
-                camera_frame_seen = parent
+            # If camera frame name overridden, use that for naming child transforms
+            cam_frame = self.camera_frame_override if self.camera_frame_override is not None else (parent or 'camera')
 
-            # get transform values
+            # read transform parent(frame=cam)->child(frame=tag) => this is T_cam_tag
             tx = t.transform.translation.x
             ty = t.transform.translation.y
             tz = t.transform.translation.z
@@ -250,92 +176,74 @@ class ApriltagMapLocalizer(Node):
             qz = t.transform.rotation.z
             qw = t.transform.rotation.w
 
-            # Build matrices
-            try:
-                M_map_tag = transform_to_matrix(self.layout[child]['position'], self.layout[child]['orientation'])
-            except Exception as e:
-                self.get_logger().warn(f"Failed to build M_map_tag for {child}: {e}")
-                continue
+            # build matrices
+            M_map_tag = transform_to_matrix(self.layout[child]['position'], self.layout[child]['orientation'])
+            M_cam_tag = transform_to_matrix([tx,ty,tz], [qx,qy,qz,qw])
 
-            M_cam_tag = transform_to_matrix([tx, ty, tz], [qx, qy, qz, qw])
-
-            # Invert M_cam_tag safely
+            # invert M_cam_tag
             try:
                 M_cam_tag_inv = np.linalg.inv(M_cam_tag)
             except Exception as e:
-                self.get_logger().warn(f"Failed to invert M_cam_tag for {child}: {e}")
+                self.get_logger().warn(f"inv failed for tag {child}: {e}")
                 continue
 
-            # Compute candidate
+            # compute M_map_cam = M_map_tag * inv(M_cam_tag)
             M_map_cam = M_map_tag.dot(M_cam_tag_inv)
-            try:
-                t_map_cam, q_map_cam = matrix_to_transform_safe(M_map_cam)
-            except Exception as e:
-                self.get_logger().warn(f"Failed to convert matrix->transform for {child}: {e}")
-                continue
+            t_map_cam, q_map_cam = matrix_to_transform(M_map_cam)
 
-            candidates_trans.append(t_map_cam)
-            candidates_quat.append(q_map_cam)
-            count += 1
+            # build a unique child frame name per tag so we can publish all of them:
+            safe_child = f"{cam_frame}_by_{self.sanitize_tag_frame_for_name(child)}"
 
-        if count == 0:
-            return
+            ts = TransformStamped()
+            ts.header.stamp = self.get_clock().now().to_msg()
+            ts.header.frame_id = 'map'
+            ts.child_frame_id = safe_child
+            ts.transform.translation.x = float(t_map_cam[0])
+            ts.transform.translation.y = float(t_map_cam[1])
+            ts.transform.translation.z = float(t_map_cam[2])
+            ts.transform.rotation.x = float(q_map_cam[0])
+            ts.transform.rotation.y = float(q_map_cam[1])
+            ts.transform.rotation.z = float(q_map_cam[2])
+            ts.transform.rotation.w = float(q_map_cam[3])
 
-        # fuse: simple average of translation and quaternion
-        trans_avg = np.mean(np.array(candidates_trans), axis=0).tolist()
-        quat_avg = normalize_quat_sum(candidates_quat)
+            # store last transform for this tag and publish immediately
+            self.last_camera_transforms[child] = ts
+            self.tf_broadcaster.sendTransform(ts)
 
-        cam_frame = self.camera_frame_override if self.camera_frame_override is not None else (camera_frame_seen or 'camera')
+            # publish PoseStamped (single topic; consumers can read header.stamp and child key mapping)
+            pose = PoseStamped()
+            pose.header.stamp = ts.header.stamp
+            pose.header.frame_id = 'map'
+            # include which tag produced this in the text? can't in header; user can infer via marker color/id
+            pose.pose.position.x = ts.transform.translation.x
+            pose.pose.position.y = ts.transform.translation.y
+            pose.pose.position.z = ts.transform.translation.z
+            pose.pose.orientation = ts.transform.rotation
+            self.pose_pub.publish(pose)
 
-        # build TransformStamped
-        ts = TransformStamped()
-        ts.header.stamp = self.get_clock().now().to_msg()
-        ts.header.frame_id = 'map'
-        ts.child_frame_id = cam_frame
-        ts.transform.translation.x = float(trans_avg[0])
-        ts.transform.translation.y = float(trans_avg[1])
-        ts.transform.translation.z = float(trans_avg[2])
-        ts.transform.rotation.x = float(quat_avg[0])
-        ts.transform.rotation.y = float(quat_avg[1])
-        ts.transform.rotation.z = float(quat_avg[2])
-        ts.transform.rotation.w = float(quat_avg[3])
+            # publish Marker with deterministic id/color
+            m = Marker()
+            m.header = pose.header
+            m.ns = "camera_in_map_by_tag"
+            m.id = abs(hash(child)) % 10000
+            m.type = Marker.ARROW
+            m.action = Marker.ADD
+            m.pose = pose.pose
+            m.scale.x = 0.2
+            m.scale.y = 0.06
+            m.scale.z = 0.06
+            # color from tag string hash
+            h = abs(hash(child)) % 360
+            r = ((h % 180) / 180.0)
+            g = (((h+60) % 180) / 180.0)
+            b = (((h+120) % 180) / 180.0)
+            m.color.r = float(r)
+            m.color.g = float(g)
+            m.color.b = float(b)
+            m.color.a = 1.0
+            self.marker_pub.publish(m)
 
-        # store and immediate publish
-        self.last_camera_transform = ts
-        if self.tf_broadcaster is not None:
-            try:
-                self.tf_broadcaster.sendTransform(ts)
-            except Exception as e:
-                self.get_logger().warn(f"Broadcast failed: {e}")
-
-        # publish PoseStamped
-        pose = PoseStamped()
-        pose.header.stamp = ts.header.stamp
-        pose.header.frame_id = 'map'
-        pose.pose.position.x = ts.transform.translation.x
-        pose.pose.position.y = ts.transform.translation.y
-        pose.pose.position.z = ts.transform.translation.z
-        pose.pose.orientation = ts.transform.rotation
-        self.pose_pub.publish(pose)
-
-        # publish marker
-        m = Marker()
-        m.header = pose.header
-        m.ns = "camera_in_map"
-        m.id = 0
-        m.type = Marker.ARROW
-        m.action = Marker.ADD
-        m.pose = pose.pose
-        m.scale.x = 0.25
-        m.scale.y = 0.06
-        m.scale.z = 0.06
-        m.color.r = 1.0
-        m.color.g = 0.0
-        m.color.b = 0.0
-        m.color.a = 1.0
-        self.marker_pub.publish(m)
-
-        self.get_logger().info(f"Published camera_in_map using {count} tags, frame: {cam_frame}")
+            # continue loop (we handle all tags independently)
 
 def main(args=None):
     import argparse
@@ -345,7 +253,7 @@ def main(args=None):
     parser.add_argument('--rate', default=10.0, type=float, help='publish rate for RViz republish')
     parsed, unknown = parser.parse_known_args()
 
-    rclpy.init(args=sys.argv)
+    rclpy.init()
     node = ApriltagMapLocalizer(parsed.layout, camera_frame_override=parsed.camera_frame, publish_rate=parsed.rate)
     try:
         rclpy.spin(node)
