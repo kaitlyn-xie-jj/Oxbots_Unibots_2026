@@ -55,11 +55,10 @@ test_ws/
 │   ├── chassis_controller
 │  
 │
-├── path_planning_snake/   # strategy to catching balls with snake path
-│   └── snake_planner
+├── path_planning/   # strategy to catching balls with snake path
+│   └──path_planning_greedy  # strategy to catching balls with greedy 
+│   └──path_planning_snake  # strategy to catching balls with snake path
 │
-├── path_planning_greedy/  # strategy to catching balls with greedy 
-│   └── greedy_planner
 │
 ├── strategy/               # Process of teh whole competition
 │   ├── Overall_process_basedon_time
