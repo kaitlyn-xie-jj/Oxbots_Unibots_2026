@@ -30,7 +30,41 @@ The overall goal is to make the robot understand:
 2) where it is,  
 3) where the game objects are, and  
 4) how it should move to achieve the task.
-
+   
+```
+test_ws/
+│
+├── sensor_data/           # sensor data package
+│   ├── camera_node
+│   ├── imu_node
+│   └── motor_encoder
+│
+├── ball_detection/        # ball detection
+│   └── ball_detection_node
+│
+├── pv_apriltag/           # robot localization with apriltag
+│   ├── pv_apriltag
+│   └── raw_apriltag localization
+│
+├── odom_localization/           # robot localization
+│
+├── IMU_localization/           # robot localization
+│
+│
+├── chassis/               # mecanum chassis 
+│   ├── chassis_controller
+│  
+│
+├── path_planning_snake/   # strategy to catching balls with snake path
+│   └── snake_planner
+│
+├── path_planning_greedy/  # strategy to catching balls with greedy 
+│   └── greedy_planner
+│
+└── communication/         # communication with Arduino/Esp32
+    └── recieve
+    └── publish
+```
 ---
 
 ## 📷 1. Camera — The Robot’s “Eyes”
