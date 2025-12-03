@@ -61,6 +61,10 @@ test_ws/
 ├── path_planning_greedy/  # strategy to catching balls with greedy 
 │   └── greedy_planner
 │
+├── strategy/               # Process of teh whole competition
+│   ├── Overall_process_basedon_time
+│  
+│
 └── communication/         # communication with Arduino/Esp32
     └── recieve
     └── publish
@@ -155,10 +159,10 @@ It tells the robot what should it do right now: catch ball/ bcak to the net/ pou
 ---
 
 
-## Why We Might Use PhotonVision on the Real Robot  
+## Why We *Might* Use PhotonVision on the Real Robot  
 (Official Website: **https://photonvision.org**)
 
-For the real robot, we use **PhotonVision (PV)** as our primary AprilTag detection and pose estimation system. In real competition environments like Unibots, PV offers several key advantages that make it both practical and reliable:
+For the real robot, we might use **PhotonVision (PV)** as our primary AprilTag detection and pose estimation system. In real competition environments like Unibots, PV offers several key advantages that make it both practical and reliable:
 
 - **High reliability and real-time performance**  
   PhotonVision is optimized for embedded hardware and delivers fast, stable, low-latency AprilTag detection without requiring us to write our own vision algorithms.
