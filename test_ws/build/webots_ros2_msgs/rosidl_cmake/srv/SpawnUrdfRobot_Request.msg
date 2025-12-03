@@ -1,1 +1,0 @@
-UrdfRobot robot

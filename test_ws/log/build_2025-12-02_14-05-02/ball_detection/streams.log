@@ -1,0 +1,16 @@
+[0.413s] Invoking command in '/home/verity-xie/Unibots 2026/test_ws/build/ball_detection': PYTHONPATH=/home/verity-xie/Unibots 2026/test_ws/build/ball_detection/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/verity-xie/Unibots 2026/test_ws/install/ball_detection/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/verity-xie/Unibots 2026/test_ws/build/ball_detection/build --no-deps symlink_data
+[0.544s] running develop
+[0.613s] running egg_info
+[0.613s] writing ball_detection.egg-info/PKG-INFO
+[0.613s] writing dependency_links to ball_detection.egg-info/dependency_links.txt
+[0.613s] writing entry points to ball_detection.egg-info/entry_points.txt
+[0.613s] writing requirements to ball_detection.egg-info/requires.txt
+[0.613s] writing top-level names to ball_detection.egg-info/top_level.txt
+[0.614s] reading manifest file 'ball_detection.egg-info/SOURCES.txt'
+[0.615s] writing manifest file 'ball_detection.egg-info/SOURCES.txt'
+[0.615s] running build_ext
+[0.616s] Creating /home/verity-xie/Unibots 2026/test_ws/install/ball_detection/lib/python3.10/site-packages/ball-detection.egg-link (link to .)
+[0.616s] 
+[0.616s] Installed /home/verity-xie/Unibots 2026/test_ws/build/ball_detection
+[0.616s] running symlink_data
+[0.637s] Invoked command in '/home/verity-xie/Unibots 2026/test_ws/build/ball_detection' returned '0': PYTHONPATH=/home/verity-xie/Unibots 2026/test_ws/build/ball_detection/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/verity-xie/Unibots 2026/test_ws/install/ball_detection/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/verity-xie/Unibots 2026/test_ws/build/ball_detection/build --no-deps symlink_data

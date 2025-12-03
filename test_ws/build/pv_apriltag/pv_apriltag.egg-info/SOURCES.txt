@@ -2,7 +2,12 @@ package.xml
 setup.cfg
 setup.py
 pv_apriltag/__init__.py
+pv_apriltag/apriltag_iterative_map_pose.py
+pv_apriltag/apriltag_map_localizer.py
+pv_apriltag/apriltag_pnp_localizer.py
+pv_apriltag/apriltag_reproj_checker.py
 pv_apriltag/epuck_camera_info_node.py
+pv_apriltag/publish_tags_and_markers.py
 pv_apriltag/pv_node.py
 pv_apriltag/pv_sim_bridge.py
 pv_apriltag/pv_simbridge_numpy.py
