@@ -1,0 +1,25 @@
+[0.405s] Invoking command in '/home/verity-xie/Unibots 2026/test_ws/build/pv_apriltag': PYTHONPATH=/home/verity-xie/Unibots 2026/test_ws/build/pv_apriltag/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/verity-xie/Unibots 2026/test_ws/build/pv_apriltag/build --no-deps symlink_data
+[0.526s] running develop
+[0.597s] running egg_info
+[0.597s] writing pv_apriltag.egg-info/PKG-INFO
+[0.597s] writing dependency_links to pv_apriltag.egg-info/dependency_links.txt
+[0.597s] writing entry points to pv_apriltag.egg-info/entry_points.txt
+[0.597s] writing requirements to pv_apriltag.egg-info/requires.txt
+[0.597s] writing top-level names to pv_apriltag.egg-info/top_level.txt
+[0.598s] reading manifest file 'pv_apriltag.egg-info/SOURCES.txt'
+[0.598s] writing manifest file 'pv_apriltag.egg-info/SOURCES.txt'
+[0.599s] running build_ext
+[0.599s] Creating /home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag/lib/python3.10/site-packages/pv-apriltag.egg-link (link to .)
+[0.599s] Installing apriltag_iterative_map_pose script to /home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag/lib/pv_apriltag
+[0.599s] Installing apriltag_iterative_map_pose_fused script to /home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag/lib/pv_apriltag
+[0.600s] Installing apriltag_map_localizer script to /home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag/lib/pv_apriltag
+[0.600s] Installing apriltag_pnp_localizer script to /home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag/lib/pv_apriltag
+[0.600s] Installing apriltag_reproj_checker script to /home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag/lib/pv_apriltag
+[0.600s] Installing epuck_camera_info script to /home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag/lib/pv_apriltag
+[0.600s] Installing publish_tags_and_markers script to /home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag/lib/pv_apriltag
+[0.600s] Installing pv_node script to /home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag/lib/pv_apriltag
+[0.600s] Installing pv_sim_bridge script to /home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag/lib/pv_apriltag
+[0.600s] 
+[0.600s] Installed /home/verity-xie/Unibots 2026/test_ws/build/pv_apriltag
+[0.600s] running symlink_data
+[0.622s] Invoked command in '/home/verity-xie/Unibots 2026/test_ws/build/pv_apriltag' returned '0': PYTHONPATH=/home/verity-xie/Unibots 2026/test_ws/build/pv_apriltag/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/verity-xie/Unibots 2026/test_ws/install/pv_apriltag/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/verity-xie/Unibots 2026/test_ws/build/pv_apriltag/build --no-deps symlink_data
