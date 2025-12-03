@@ -5,13 +5,13 @@ The goal is to create a **robust, modular, and scalable** system that supports v
 
 To achieve this, we adopt a **ROS2 modular design**, in which each subsystem is implemented as an independent node with a clear responsibility. All components communicate through ROS topics and the TF transform system, enabling loose coupling, clean data flow, and easy extensibility.
 
-Under this architecture:
+Under this architecture,:
 
 - **In simulation (Webots)**  
-  We use `apriltag_ros` to detect AprilTags and a custom `pv_sim_bridge` node to compute the robot’s global pose using tag observations combined with the arena’s known field layout.
+  We use `apriltag_ros` and our own code to detect AprilTags and a custom `pv_sim_bridge` node to compute the robot’s global pose using tag observations combined with the arena’s known field layout.
 
 - **On the real robot**  
-  We use **PhotonVision**, a proven, high-performance vision system that performs AprilTag detection and pose estimation directly on the robot, providing reliable localization output.
+  We might use **PhotonVision**, a proven, high-performance vision system that performs AprilTag detection and pose estimation directly on the robot, providing reliable localization output.
 
 Despite the differences between simulation and real hardware, both environments unify their localization results under the same set of ROS topics (`/pv/*`).  
 This ensures that higher-level modules—navigation, planning, and strategy—work identically across both environments without any code changes.
@@ -42,13 +42,13 @@ test_ws/
 ├── ball_detection/        # ball detection
 │   └── ball_detection_node
 │
-├── pv_apriltag/           # robot localization with apriltag
+├── localization/           # robot localization 
 │   ├── pv_apriltag
 │   └── raw_apriltag localization
+│   └── IMU_localization
+│   └── Odom_localization
+│   └── Fusion_ocalization
 │
-├── odom_localization/           # robot localization
-│
-├── IMU_localization/           # robot localization
 │
 │
 ├── chassis/               # mecanum chassis 
@@ -117,7 +117,7 @@ This makes the higher-level code identical in both environments.
 
 This node analyzes camera images to find balls or other game pieces.
 
-**Input:** Camera images  
+**Input:** Camera images / Camera info 
 **Output:** Detected object positions (relative to the robot or field); Trying to use Yolo
 **Used by:** Path planning & strategy modules
 
@@ -125,21 +125,20 @@ It acts like the robot’s **scout**, reporting target positions.
 
 ---
 
-## 🧭 4. Path Planning & Control — “How do I get there?” ⭕️ Todo
+## 🧭 4. Path Planning — “How do I get there?” ⭕️ Todo
 
 This module receives:
 - The robot’s current pose (from Localization)  
 - The ball positions (from Ball Detection)  
-- High-level goals (from Strategy)
 
 It computes:
 - How the robot should move  
 - What path to take  
 - How to control the wheels smoothly  
 
-**Output:** Motion commands (e.g., `/cmd_vel`)
+**Output:** Next target position
+**Used by:** Chassis pkg to comput Motor data
 
-It acts as the robot’s **driver**.
 
 ---
 
@@ -151,13 +150,12 @@ The Strategy layer makes high-level decisions such as:
 - When to reposition  
 - What to do if the robot loses vision  
 
-It sends goals to the Path Planner but does not directly control movement.
-It sends command to those function part like intake to control them.
+It tells the robot what should it do right now: catch ball/ bcak to the net/ pour balls
 
 ---
 
 
-## Why We Use PhotonVision on the Real Robot  
+## Why We Might Use PhotonVision on the Real Robot  
 (Official Website: **https://photonvision.org**)
 
 For the real robot, we use **PhotonVision (PV)** as our primary AprilTag detection and pose estimation system. In real competition environments like Unibots, PV offers several key advantages that make it both practical and reliable:
